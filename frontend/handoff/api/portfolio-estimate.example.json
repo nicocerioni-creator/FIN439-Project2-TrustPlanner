@@ -1,0 +1,378 @@
+{
+  "api_version": "4.3.0",
+  "inputs": {
+    "payment_inputs": {
+      "model_start_date": "2026-11-23",
+      "family_mode": "custom",
+      "starting_ages": [
+        79
+      ],
+      "first_college_years": [
+        2000
+      ],
+      "graduation_dates": [
+        null
+      ],
+      "college_annual": "50000",
+      "adult_support_enabled": true,
+      "adult_minimum": "120",
+      "adult_target": "1200",
+      "degree_years": [
+        "1"
+      ]
+    },
+    "opening_balance": "240",
+    "opening_transaction_cost": "0",
+    "portfolio": {
+      "decision_date": "2026-11-23",
+      "estimation_months": 12,
+      "max_data_age_days": 60,
+      "current_weights": {
+        "VOO": "0",
+        "QQQ": "0",
+        "SCHD": "0",
+        "PAVE": "0",
+        "XLE": "0",
+        "XLV": "0",
+        "SGOV": "100"
+      },
+      "initial_allocation": true,
+      "allocation_style": "target_return",
+      "max_growth_fund_weight_percent": "40",
+      "proposed_weights": null,
+      "turnover_used_percent": "0",
+      "volatility_limit_percent": "25",
+      "turnover_limit_percent": "33",
+      "max_fund_weight_percent": "100",
+      "risk_off_equity_cap_percent": "40",
+      "return_target_percent": "10",
+      "transaction_cost_bps": "0",
+      "pilot_max_percent": "0",
+      "confirm_reserve_proxy": true,
+      "price_csv": "Date,VOO,QQQ,SCHD,PAVE,XLE,XLV,SGOV\n2024-09-28,100.0,100.0,100.0,100.0,100.0,100.0,100.0\n2024-10-28,101.40488259088474,101.4955784560954,101.08467200483592,100.59591850281524,100.52464543520212,100.98235070108063,100.20841470984807\n2024-11-28,102.87076972704742,102.5457247925269,101.63651193282043,101.0733924379885,101.46188767167605,102.54171204084945,100.41794346463196\n2024-12-28,103.88370939770887,103.05426801561904,102.06810674124179,101.96521422477109,102.97792303895051,104.32964465990219,100.62019644966033\n2025-01-28,104.34694607932406,103.44035612652051,102.91767134328227,103.43778764981816,104.72197253665135,105.78741262422935,100.8138218809845\n2025-02-28,104.6857036765434,104.24962247787666,104.35254124177837,105.1379065894842,106.13286139871451,106.6586643550043,101.00578224264414\n2025-03-28,105.45237016134976,105.65093752075323,106.01551893759812,106.50183025750468,106.95389177114039,107.24529327629415,101.2049715490328\n2025-04-28,106.81712625679675,107.2817811849983,107.3378198574342,107.27246401115785,107.48866751468118,108.1333446292411,101.41403052313402\n2025-05-28,108.41256282156455,108.56623493719177,108.06083381601285,107.75519640261268,108.32498980946067,109.64948249444751,101.62689206492243\n2025-06-28,109.65634881398583,109.24324022668144,108.4930835010067,108.53971484385936,109.78965223725983,111.56216904657647,101.83433408113405\n2025-07-28,110.28532374112456,109.62559798668362,109.22872763363476,109.95301071190359,111.64988903438216,113.28041912232736,102.03246274654097\n2025-08-28,110.61618619279028,110.31410840556157,110.59638077492812,111.76103889153063,113.31366520492405,114.38746109196298,102.22632452568436\n2025-09-28,111.25560996970411,111.64019454770803,112.35969011253064,113.37059086745863,114.36437524196236,115.04308598534284,102.42529198701102\n2025-10-28,112.53738609925931,113.36432598337225,113.92168385487996,114.36514345682883,114.96268562851597,115.84770613174878,102.63444614412808\n2025-11-28,114.21910474891625,114.88360373638187,114.86411010969744,114.90627529065848,115.70926210585982,117.28413233790917,102.84988208014614\n2025-12-28,115.6927284612476,115.77654574860067,115.35017080659577,115.59503229730649,117.0861170770438,119.27534380941674,103.06227004707428\n2026-01-28,116.53411309597067,116.20857924900528,115.98391347152959,116.91273050177793,119.01542365196103,121.24576459684388,103.26542739023147\n2026-02-28,116.91070648954114,116.78893378598208,117.2480526781463,118.78072370441379,120.92204286375963,122.63365178713201,103.46203033272285\n2026-03-28,117.43611215043875,118.00345265404103,119.06277952202522,120.62419267673029,122.24576342485248,123.42128819239932,103.6611845268578\n2026-04-28,118.59864314060934,119.77086960427422,120.85109459220674,121.88434060761223,122.96978566652137,124.17002711862379,103.87006054082023\n2026-05-28,120.31567533686258,121.50993470583552,122.05318739563089,122.54528008816258,123.65430064637195,125.49937770809495,104.08728342974824\n2026-06-28,122.00249314394351,122.65782595345733,122.6540158841744,123.16615940500499,124.91630277489605,127.5168242177455,104.30416651786588\n2026-07-28,123.09403629143289,123.20030196969368,123.2141191062286,124.36159653825709,126.86191799912189,129.7149918231402,104.51268252805781\n2026-08-28,123.57689450720325,123.70129967246716,124.34841467148809,126.23639122004109,128.98536520474573,131.4175574817975,104.71286381666889\n2026-09-28,124.0176351875099,124.77822951834948,126.16083642467188,128.28625000296051,130.61386151424375,132.4055805280856,104.9128069739326\n",
+      "source_available_on": "2026-10-22",
+      "confirm_uploaded_provenance": true
+    }
+  },
+  "status": "portfolio_estimates_only",
+  "data_card": {
+    "source": "User-uploaded adjusted-price panel",
+    "sha256": "561037576b9da65ded0a5b5e673fa340b4ebbe070fcd46c4f60ea815ad9b7dce",
+    "snapshot_available_on": "2026-10-22",
+    "first_price_date": "2024-09-28",
+    "last_price_date": "2026-09-28",
+    "decision_date": "2026-11-23",
+    "units": "USD adjusted price; derived returns are decimals/percent, not CPI.",
+    "rows": 25,
+    "source_provenance": "User asserted; not independently verified",
+    "availability_rule": "Entire frozen snapshot must predate decision day; closing observations must also predate it. No backdated use of later adjusted history.",
+    "revision_limit": "This is one forward-decision snapshot, not evidence of vintage-safe historical backtesting.",
+    "signal": "12-month VOO adjusted-price total-return proxy; if nonpositive, restrict equity weight to the entered risk-off cap. An unvalidated research hypothesis.",
+    "data_age_days": 56,
+    "admission": "admit_for_this_forward_decision",
+    "reasons": [],
+    "estimation_months": 12,
+    "estimation_first_return_date": "2025-10-28",
+    "signal_start_price_date": "2025-09-28",
+    "signal_end_price_date": "2026-09-28",
+    "signal_12_month_return_percent": 11.470904902036839,
+    "signal_regime": "risk_on"
+  },
+  "portfolios": [
+    {
+      "name": "Equal weight",
+      "weights": {
+        "VOO": 14.285714285714285,
+        "QQQ": 14.285714285714285,
+        "SCHD": 14.285714285714285,
+        "PAVE": 14.285714285714285,
+        "XLE": 14.285714285714285,
+        "XLV": 14.285714285714285,
+        "SGOV": 14.285714285714285
+      },
+      "historical_arithmetic_return_percent": 10.873696837295919,
+      "historical_constant_mix_cagr_percent": 11.432306363118999,
+      "annualized_sample_volatility_percent": 0.06078715720329317,
+      "one_way_transition_turnover_percent": 85.71428571428571,
+      "turnover_charged_percent": 0,
+      "annual_turnover_total_percent": 0.0,
+      "proposed_transaction_cost": 0.0,
+      "reserve_proxy_assets": 34.29,
+      "hard_checks": {
+        "long_only_sum_100": true,
+        "volatility": true,
+        "annual_turnover_budget": true,
+        "college_reserve_proxy_coverage": true,
+        "point_in_time_equity_cap": true,
+        "maximum_fund_weight": true
+      },
+      "hard_checks_pass": true,
+      "failed_rules": [],
+      "return_objective_met": true,
+      "equity_cap_percent": 100,
+      "historical_sharpe_proxy": 139.3666229028514,
+      "historical_max_drawdown_percent": 0,
+      "college_model_assets": 0.0,
+      "support_model_assets": 240.0,
+      "college_weights": {
+        "VOO": 0,
+        "QQQ": 0,
+        "SCHD": 0,
+        "PAVE": 0,
+        "XLE": 0,
+        "XLV": 0,
+        "SGOV": 100
+      },
+      "support_weights": {
+        "VOO": 14.285714285714285,
+        "QQQ": 14.285714285714285,
+        "SCHD": 14.285714285714285,
+        "PAVE": 14.285714285714285,
+        "XLE": 14.285714285714285,
+        "XLV": 14.285714285714285,
+        "SGOV": 14.285714285714285
+      },
+      "college_scenario_return_percent": 2.428614006037735,
+      "support_scenario_return_percent": 11.432306363118999
+    },
+    {
+      "name": "Inverse volatility",
+      "weights": {
+        "VOO": 1.512253133936581,
+        "QQQ": 1.5327864740065822,
+        "SCHD": 1.588347772106151,
+        "PAVE": 1.5208096519892689,
+        "XLE": 1.5220335555061053,
+        "XLV": 1.5885813762972907,
+        "SGOV": 90.73518803615801
+      },
+      "historical_arithmetic_return_percent": 3.3185309062259596,
+      "historical_constant_mix_cagr_percent": 3.369472120577778,
+      "annualized_sample_volatility_percent": 0.01848362063240268,
+      "one_way_transition_turnover_percent": 9.264811963841984,
+      "turnover_charged_percent": 0,
+      "annual_turnover_total_percent": 0.0,
+      "proposed_transaction_cost": 0.0,
+      "reserve_proxy_assets": 217.76,
+      "hard_checks": {
+        "long_only_sum_100": true,
+        "volatility": true,
+        "annual_turnover_budget": true,
+        "college_reserve_proxy_coverage": true,
+        "point_in_time_equity_cap": true,
+        "maximum_fund_weight": true
+      },
+      "hard_checks_pass": true,
+      "failed_rules": [],
+      "return_objective_met": false,
+      "equity_cap_percent": 100,
+      "historical_sharpe_proxy": 49.58632848214906,
+      "historical_max_drawdown_percent": 0,
+      "college_model_assets": 0.0,
+      "support_model_assets": 240.0,
+      "college_weights": {
+        "VOO": 0,
+        "QQQ": 0,
+        "SCHD": 0,
+        "PAVE": 0,
+        "XLE": 0,
+        "XLV": 0,
+        "SGOV": 100
+      },
+      "support_weights": {
+        "VOO": 1.512253133936581,
+        "QQQ": 1.5327864740065822,
+        "SCHD": 1.588347772106151,
+        "PAVE": 1.5208096519892689,
+        "XLE": 1.5220335555061053,
+        "XLV": 1.5885813762972907,
+        "SGOV": 90.73518803615801
+      },
+      "college_scenario_return_percent": 2.428614006037735,
+      "support_scenario_return_percent": 3.369472120577778
+    },
+    {
+      "name": "VOO benchmark proxy",
+      "weights": {
+        "VOO": 100,
+        "QQQ": 0,
+        "SCHD": 0,
+        "PAVE": 0,
+        "XLE": 0,
+        "XLV": 0,
+        "SGOV": 0
+      },
+      "historical_arithmetic_return_percent": 10.91976132049004,
+      "historical_constant_mix_cagr_percent": 11.470904902036844,
+      "annualized_sample_volatility_percent": 1.565534992603534,
+      "one_way_transition_turnover_percent": 100.0,
+      "turnover_charged_percent": 0,
+      "annual_turnover_total_percent": 0.0,
+      "proposed_transaction_cost": 0.0,
+      "reserve_proxy_assets": 0.0,
+      "hard_checks": {
+        "long_only_sum_100": true,
+        "volatility": true,
+        "annual_turnover_budget": true,
+        "college_reserve_proxy_coverage": true,
+        "point_in_time_equity_cap": true,
+        "maximum_fund_weight": true
+      },
+      "hard_checks_pass": true,
+      "failed_rules": [],
+      "return_objective_met": true,
+      "equity_cap_percent": 100,
+      "historical_sharpe_proxy": 5.440801603748579,
+      "historical_max_drawdown_percent": 0,
+      "college_model_assets": 0.0,
+      "support_model_assets": 240.0,
+      "college_weights": {
+        "VOO": 0,
+        "QQQ": 0,
+        "SCHD": 0,
+        "PAVE": 0,
+        "XLE": 0,
+        "XLV": 0,
+        "SGOV": 100
+      },
+      "support_weights": {
+        "VOO": 100.0,
+        "QQQ": 0.0,
+        "SCHD": 0.0,
+        "PAVE": 0.0,
+        "XLE": 0.0,
+        "XLV": 0.0,
+        "SGOV": 0.0
+      },
+      "college_scenario_return_percent": 2.428614006037735,
+      "support_scenario_return_percent": 11.470904902036844
+    },
+    {
+      "name": "Constrained candidate",
+      "weights": {
+        "VOO": 20.0,
+        "QQQ": 0.0,
+        "SCHD": 20.0,
+        "PAVE": 20.0,
+        "XLE": 0.0,
+        "XLV": 20.0,
+        "SGOV": 20.0
+      },
+      "historical_arithmetic_return_percent": 10.311453758319518,
+      "historical_constant_mix_cagr_percent": 10.813004818835562,
+      "annualized_sample_volatility_percent": 0.042261659234797654,
+      "one_way_transition_turnover_percent": 80.0,
+      "turnover_charged_percent": 0,
+      "annual_turnover_total_percent": 0.0,
+      "proposed_transaction_cost": 0.0,
+      "reserve_proxy_assets": 48.0,
+      "hard_checks": {
+        "long_only_sum_100": true,
+        "volatility": true,
+        "annual_turnover_budget": true,
+        "college_reserve_proxy_coverage": true,
+        "point_in_time_equity_cap": true,
+        "maximum_fund_weight": true
+      },
+      "hard_checks_pass": true,
+      "failed_rules": [],
+      "return_objective_met": true,
+      "equity_cap_percent": 100,
+      "historical_sharpe_proxy": 187.15445345787015,
+      "historical_max_drawdown_percent": 0,
+      "allocation_style": "target_return",
+      "allocation_label": "Target return (legacy)",
+      "college_model_assets": 0.0,
+      "support_model_assets": 240.0,
+      "college_weights": {
+        "VOO": 0,
+        "QQQ": 0,
+        "SCHD": 0,
+        "PAVE": 0,
+        "XLE": 0,
+        "XLV": 0,
+        "SGOV": 100
+      },
+      "support_weights": {
+        "VOO": 20.0,
+        "QQQ": 0.0,
+        "SCHD": 20.0,
+        "PAVE": 20.0,
+        "XLE": 0.0,
+        "XLV": 20.0,
+        "SGOV": 20.0
+      },
+      "college_scenario_return_percent": 2.428614006037735,
+      "support_scenario_return_percent": 10.813004818835562
+    }
+  ],
+  "candidate": {
+    "name": "Constrained candidate",
+    "weights": {
+      "VOO": 20.0,
+      "QQQ": 0.0,
+      "SCHD": 20.0,
+      "PAVE": 20.0,
+      "XLE": 0.0,
+      "XLV": 20.0,
+      "SGOV": 20.0
+    },
+    "historical_arithmetic_return_percent": 10.311453758319518,
+    "historical_constant_mix_cagr_percent": 10.813004818835562,
+    "annualized_sample_volatility_percent": 0.042261659234797654,
+    "one_way_transition_turnover_percent": 80.0,
+    "turnover_charged_percent": 0,
+    "annual_turnover_total_percent": 0.0,
+    "proposed_transaction_cost": 0.0,
+    "reserve_proxy_assets": 48.0,
+    "hard_checks": {
+      "long_only_sum_100": true,
+      "volatility": true,
+      "annual_turnover_budget": true,
+      "college_reserve_proxy_coverage": true,
+      "point_in_time_equity_cap": true,
+      "maximum_fund_weight": true
+    },
+    "hard_checks_pass": true,
+    "failed_rules": [],
+    "return_objective_met": true,
+    "equity_cap_percent": 100,
+    "historical_sharpe_proxy": 187.15445345787015,
+    "historical_max_drawdown_percent": 0,
+    "allocation_style": "target_return",
+    "allocation_label": "Target return (legacy)",
+    "college_model_assets": 0.0,
+    "support_model_assets": 240.0,
+    "college_weights": {
+      "VOO": 0,
+      "QQQ": 0,
+      "SCHD": 0,
+      "PAVE": 0,
+      "XLE": 0,
+      "XLV": 0,
+      "SGOV": 100
+    },
+    "support_weights": {
+      "VOO": 20.0,
+      "QQQ": 0.0,
+      "SCHD": 20.0,
+      "PAVE": 20.0,
+      "XLE": 0.0,
+      "XLV": 20.0,
+      "SGOV": 20.0
+    },
+    "college_scenario_return_percent": 2.428614006037735,
+    "support_scenario_return_percent": 10.813004818835562
+  },
+  "grid_combinations_examined": 8008,
+  "allocation_style": "target_return",
+  "allocation_label": "Target return (legacy)",
+  "search_rule": "Lowest historical volatility meeting the target, otherwise highest feasible return. College backing, volatility, turnover, trend and concentration checks remain binding. Search uses a10-percentage-point whole-trust grid (custom weights bypass search). Not a continuous/global optimum. Lower risk may select all SGOV; no forced equity exposure.",
+  "risk_definitions": {
+    "volatility": "Sample monthly return covariance, annualized by12; portfolio sqrt(w\u03a3w). Historical estimate only.",
+    "turnover": "One-way target transition =0.5 sum|target-current|, plus entered year-to-date budget used. Initial funding is excluded only if explicitly selected. This is proposed-trade budget, not proof of all future annual turnover.",
+    "reserve": "SGOV treated as a liquid government-bill proxy solely under the confirmed modelling assumption. It is not an inflation-matched guarantee.",
+    "benchmark": "VOO adjusted-return proxy for S&P500 total return; ETF fees/tracking differ from the index.",
+    "returns": "Arithmetic annual mean for objective/search; historical constant-monthly-mix CAGR as an optional forward scenario. Not an out-of-sample strategy backtest; fund expenses are already embedded in adjusted returns."
+  }
+}

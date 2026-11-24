@@ -1,0 +1,1473 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Trust support planner API",
+    "description": "Educational research: payments, reserve accounting, draft adaptive funding, historical portfolio checks and stress scenarios. No guarantee of future risk compliance or lifetime solvency.",
+    "version": "4.4.0"
+  },
+  "paths": {
+    "/api/health": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health_api_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/reference-case": {
+      "get": {
+        "summary": "Reference Case",
+        "operationId": "reference_case_api_v1_reference_case_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/payment-schedule": {
+      "post": {
+        "summary": "Calculate Payments",
+        "operationId": "calculate_payments_api_v1_payment_schedule_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PaymentRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/college-payment-plan": {
+      "post": {
+        "summary": "Nominal College Plan",
+        "operationId": "nominal_college_plan_api_v1_college_payment_plan_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CollegePlanRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/college-reserve": {
+      "post": {
+        "summary": "Calculate College Reserve",
+        "operationId": "calculate_college_reserve_api_v1_college_reserve_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReserveRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/funding-projection": {
+      "post": {
+        "summary": "Calculate Funding Projection",
+        "operationId": "calculate_funding_projection_api_v1_funding_projection_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FundingRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/portfolio-estimate": {
+      "post": {
+        "summary": "Portfolio Estimate",
+        "operationId": "portfolio_estimate_api_v1_portfolio_estimate_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PortfolioEstimateRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/portfolio-cases": {
+      "post": {
+        "summary": "Portfolio Cases",
+        "operationId": "portfolio_cases_api_v1_portfolio_cases_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PortfolioEstimateRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/portfolio-simulation": {
+      "post": {
+        "summary": "Portfolio Simulation",
+        "operationId": "portfolio_simulation_api_v1_portfolio_simulation_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PortfolioSimulationRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/investment-data": {
+      "get": {
+        "summary": "Investment Data",
+        "operationId": "investment_data_api_v1_investment_data_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/evaluate": {
+      "post": {
+        "summary": "Evaluate",
+        "operationId": "evaluate_api_v1_evaluate_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EvaluationRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/validate-funding-plan": {
+      "post": {
+        "summary": "Validate Funding Plan",
+        "operationId": "validate_funding_plan_api_v1_validate_funding_plan_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FundingRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/validate-analysis-plan": {
+      "post": {
+        "summary": "Validate Analysis Plan",
+        "operationId": "validate_analysis_plan_api_v1_validate_analysis_plan_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EvaluationRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AdaptivePolicy": {
+        "properties": {
+          "enabled": {
+            "type": "boolean",
+            "title": "Enabled",
+            "default": false
+          },
+          "real_discount_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 20.0,
+                "minimum": -20.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Real Discount Percent",
+            "default": "0"
+          },
+          "buffer_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Buffer Percent",
+            "default": "0"
+          },
+          "terminal_real_balance": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Terminal Real Balance",
+            "default": "0"
+          },
+          "max_monthly_restoration_points": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Max Monthly Restoration Points",
+            "default": "100"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "AdaptivePolicy"
+      },
+      "CollegePlanRequest": {
+        "properties": {
+          "payment_inputs": {
+            "$ref": "#/components/schemas/PaymentRequest"
+          },
+          "annual_inflation_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "minimum": -50.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Annual Inflation Percent"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "payment_inputs",
+          "annual_inflation_percent"
+        ],
+        "title": "CollegePlanRequest"
+      },
+      "EvaluationRequest": {
+        "properties": {
+          "funding": {
+            "$ref": "#/components/schemas/FundingRequest"
+          },
+          "portfolio": {
+            "$ref": "#/components/schemas/PortfolioSettings"
+          },
+          "stress": {
+            "$ref": "#/components/schemas/StressSettings"
+          },
+          "use_historical_proxy_returns": {
+            "type": "boolean",
+            "title": "Use Historical Proxy Returns",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "funding",
+          "portfolio"
+        ],
+        "title": "EvaluationRequest"
+      },
+      "FundingRequest": {
+        "properties": {
+          "payment_inputs": {
+            "$ref": "#/components/schemas/PaymentRequest"
+          },
+          "opening_balance": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Opening Balance"
+          },
+          "college_annual_return_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "exclusiveMinimum": -100.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "College Annual Return Percent"
+          },
+          "support_annual_return_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "exclusiveMinimum": -100.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Support Annual Return Percent"
+          },
+          "annual_cost_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "exclusiveMaximum": 100.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Annual Cost Percent",
+            "default": "0"
+          },
+          "annual_cpi_change_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "minimum": -50.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Annual Cpi Change Percent"
+          },
+          "reserve_transfer_rule": {
+            "type": "string",
+            "const": "protect_before_payments",
+            "title": "Reserve Transfer Rule",
+            "default": "protect_before_payments"
+          },
+          "include_horizon_day_payments": {
+            "type": "boolean",
+            "const": true,
+            "title": "Include Horizon Day Payments",
+            "default": true
+          },
+          "portfolio_source": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/PortfolioSettings"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "adaptive_policy": {
+            "$ref": "#/components/schemas/AdaptivePolicy"
+          },
+          "opening_transaction_cost": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Opening Transaction Cost",
+            "default": "0"
+          },
+          "initial_college_shock_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "exclusiveMinimum": -100.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Initial College Shock Percent",
+            "default": "0"
+          },
+          "initial_support_shock_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "exclusiveMinimum": -100.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Initial Support Shock Percent",
+            "default": "0"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "payment_inputs",
+          "opening_balance",
+          "college_annual_return_percent",
+          "support_annual_return_percent",
+          "annual_cpi_change_percent"
+        ],
+        "title": "FundingRequest"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "PaymentRequest": {
+        "properties": {
+          "model_start_date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Model Start Date"
+          },
+          "family_mode": {
+            "type": "string",
+            "enum": [
+              "demo",
+              "custom"
+            ],
+            "title": "Family Mode",
+            "default": "custom"
+          },
+          "starting_ages": {
+            "items": {
+              "type": "integer",
+              "maximum": 100.0,
+              "minimum": 0.0
+            },
+            "type": "array",
+            "maxItems": 50,
+            "title": "Starting Ages",
+            "default": [
+              8,
+              6,
+              4,
+              2
+            ]
+          },
+          "first_college_years": {
+            "anyOf": [
+              {
+                "items": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "maximum": 2300.0,
+                      "minimum": 1900.0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "First College Years"
+          },
+          "graduation_dates": {
+            "anyOf": [
+              {
+                "items": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Graduation Dates"
+          },
+          "college_annual": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "College Annual",
+            "default": "50000"
+          },
+          "adult_support_enabled": {
+            "type": "boolean",
+            "title": "Adult Support Enabled",
+            "default": true
+          },
+          "adult_minimum": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Adult Minimum",
+            "default": "20000"
+          },
+          "adult_target": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Adult Target",
+            "default": "200000"
+          },
+          "degree_years": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "multipleOf": 0.5,
+                  "maximum": 100.0,
+                  "exclusiveMinimum": 0.0
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "type": "array",
+            "maxItems": 50,
+            "title": "Degree Years",
+            "default": [
+              "4",
+              "4",
+              "4",
+              "4"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "PaymentRequest"
+      },
+      "PortfolioEstimateRequest": {
+        "properties": {
+          "payment_inputs": {
+            "$ref": "#/components/schemas/PaymentRequest"
+          },
+          "opening_balance": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Opening Balance"
+          },
+          "opening_transaction_cost": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Opening Transaction Cost",
+            "default": "0"
+          },
+          "portfolio": {
+            "$ref": "#/components/schemas/PortfolioSettings"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "payment_inputs",
+          "opening_balance",
+          "portfolio"
+        ],
+        "title": "PortfolioEstimateRequest"
+      },
+      "PortfolioSettings": {
+        "properties": {
+          "decision_date": {
+            "type": "string",
+            "format": "date",
+            "title": "Decision Date"
+          },
+          "estimation_months": {
+            "type": "integer",
+            "maximum": 120.0,
+            "minimum": 12.0,
+            "title": "Estimation Months",
+            "default": 36
+          },
+          "max_data_age_days": {
+            "type": "integer",
+            "maximum": 365.0,
+            "minimum": 1.0,
+            "title": "Max Data Age Days",
+            "default": 60
+          },
+          "current_weights": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0.0
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "type": "object",
+            "title": "Current Weights"
+          },
+          "initial_allocation": {
+            "type": "boolean",
+            "title": "Initial Allocation",
+            "default": true
+          },
+          "allocation_style": {
+            "type": "string",
+            "enum": [
+              "lower_risk",
+              "balanced_growth",
+              "aggressive_growth",
+              "maximum_sharpe",
+              "target_return",
+              "custom"
+            ],
+            "title": "Allocation Style",
+            "default": "target_return"
+          },
+          "max_growth_fund_weight_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Max Growth Fund Weight Percent",
+            "default": "40"
+          },
+          "proposed_weights": {
+            "anyOf": [
+              {
+                "additionalProperties": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 0.0
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Proposed Weights"
+          },
+          "turnover_used_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Turnover Used Percent",
+            "default": "0"
+          },
+          "volatility_limit_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 25.0,
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Volatility Limit Percent",
+            "default": "25"
+          },
+          "turnover_limit_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 33.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Turnover Limit Percent",
+            "default": "33"
+          },
+          "max_fund_weight_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Max Fund Weight Percent",
+            "default": "100"
+          },
+          "risk_off_equity_cap_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Risk Off Equity Cap Percent",
+            "default": "40"
+          },
+          "return_target_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "minimum": -50.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Return Target Percent",
+            "default": "10"
+          },
+          "transaction_cost_bps": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1000.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Transaction Cost Bps",
+            "default": "0"
+          },
+          "pilot_max_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Pilot Max Percent",
+            "default": "0"
+          },
+          "confirm_reserve_proxy": {
+            "type": "boolean",
+            "title": "Confirm Reserve Proxy",
+            "default": false
+          },
+          "price_csv": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 500000
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Price Csv"
+          },
+          "source_available_on": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Available On"
+          },
+          "confirm_uploaded_provenance": {
+            "type": "boolean",
+            "title": "Confirm Uploaded Provenance",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "decision_date",
+          "current_weights"
+        ],
+        "title": "PortfolioSettings"
+      },
+      "PortfolioSimulationRequest": {
+        "properties": {
+          "payment_inputs": {
+            "$ref": "#/components/schemas/PaymentRequest"
+          },
+          "opening_balance": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Opening Balance"
+          },
+          "opening_transaction_cost": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Opening Transaction Cost",
+            "default": "0"
+          },
+          "portfolio": {
+            "$ref": "#/components/schemas/PortfolioSettings"
+          },
+          "years": {
+            "type": "integer",
+            "maximum": 100.0,
+            "minimum": 1.0,
+            "title": "Years",
+            "default": 30
+          },
+          "paths": {
+            "type": "integer",
+            "enum": [
+              1000,
+              5000,
+              10000,
+              20000
+            ],
+            "title": "Paths",
+            "default": 5000
+          },
+          "seed": {
+            "type": "integer",
+            "maximum": 2147483647.0,
+            "minimum": 0.0,
+            "title": "Seed",
+            "default": 439
+          },
+          "scope": {
+            "type": "string",
+            "enum": [
+              "long_term",
+              "whole_trust"
+            ],
+            "title": "Scope",
+            "default": "long_term"
+          },
+          "annual_cost_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "exclusiveMaximum": 100.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Annual Cost Percent",
+            "default": "0"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "payment_inputs",
+          "opening_balance",
+          "portfolio"
+        ],
+        "title": "PortfolioSimulationRequest"
+      },
+      "ReserveRequest": {
+        "properties": {
+          "payment_inputs": {
+            "$ref": "#/components/schemas/PaymentRequest"
+          },
+          "valuation_date": {
+            "type": "string",
+            "format": "date",
+            "title": "Valuation Date"
+          },
+          "reserve_assets": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reserve Assets"
+          },
+          "future_cpi_annual_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "minimum": -50.0
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Future Cpi Annual Percent"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "payment_inputs",
+          "valuation_date"
+        ],
+        "title": "ReserveRequest"
+      },
+      "StressSettings": {
+        "properties": {
+          "enabled": {
+            "type": "boolean",
+            "title": "Enabled",
+            "default": true
+          },
+          "support_loss_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 0.0,
+                "exclusiveMinimum": -100.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Support Loss Percent",
+            "default": "-35"
+          },
+          "college_loss_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 0.0,
+                "exclusiveMinimum": -100.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "College Loss Percent",
+            "default": "-1"
+          },
+          "inflation_increase_points": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 20.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Inflation Increase Points",
+            "default": "2"
+          },
+          "return_reduction_points": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 30.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Return Reduction Points",
+            "default": "3"
+          },
+          "cost_increase_points": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 20.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Cost Increase Points",
+            "default": "0.5"
+          },
+          "longevity_extension_years": {
+            "type": "integer",
+            "maximum": 20.0,
+            "minimum": 0.0,
+            "title": "Longevity Extension Years",
+            "default": 10
+          },
+          "short_window_months": {
+            "type": "integer",
+            "maximum": 120.0,
+            "minimum": 12.0,
+            "title": "Short Window Months",
+            "default": 12
+          },
+          "long_window_months": {
+            "type": "integer",
+            "maximum": 120.0,
+            "minimum": 12.0,
+            "title": "Long Window Months",
+            "default": 60
+          },
+          "trade_cost_increase_bps": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1000.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Trade Cost Increase Bps",
+            "default": "25"
+          },
+          "tighter_volatility_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 25.0,
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Tighter Volatility Percent",
+            "default": "10"
+          },
+          "tighter_fund_cap_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 100.0,
+                "exclusiveMinimum": 0.0
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "title": "Tighter Fund Cap Percent",
+            "default": "60"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "StressSettings"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

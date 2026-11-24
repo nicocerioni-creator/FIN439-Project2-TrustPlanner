@@ -1,0 +1,84 @@
+{
+  "api_version": "4.3.0",
+  "reference_initial_capital": "10000000",
+  "inputs": {
+    "model_start_date": null,
+    "family_mode": "demo",
+    "starting_ages": [
+      8,
+      6,
+      4,
+      2
+    ],
+    "first_college_years": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "graduation_dates": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "college_annual": "50000",
+    "adult_support_enabled": true,
+    "adult_minimum": "20000",
+    "adult_target": "200000",
+    "degree_years": [
+      "4",
+      "4",
+      "4",
+      "4"
+    ]
+  },
+  "policy": {
+    "starting_ages": [
+      8,
+      6,
+      4,
+      2
+    ],
+    "starting_ages_assumed_exact": true,
+    "college_entry_age": 18,
+    "college_entry_rule": "first_august_1_on_or_after_age_18_unless_overridden",
+    "college_allowance_type": "fixed_annual_allowance",
+    "cpi_indexation_basis": "model_start",
+    "deflation_treatment": "benefits_fall_proportionately_with_cpi",
+    "college_funding_end": "graduation",
+    "college_reserve_coverage": "all_remaining_college_payments_through_graduation",
+    "one_semester_annual_fraction": "0.5",
+    "college_payment_timing": "fall_august_1_spring_january_1",
+    "estimated_graduation_rule": "may_31_after_spring_or_december_31_after_fall_editable",
+    "cpi_series": "CPI-U, U.S. city average, all items, not seasonally adjusted",
+    "cpi_update_frequency": "monthly",
+    "cpi_availability_rule": "latest_observation_in_vintage_before_reference_date",
+    "cpi_update_day": "first_day_of_month_before_payments",
+    "cpi_baseline_cutoff": "prior_day_before_model_start",
+    "college_reserve_valuation": "full_undiscounted_remaining_allowance_cpi_adjusted",
+    "data_cost_policy": "free_public_data_no_api_keys_no_paid_fallback",
+    "adult_support_review_frequency": "monthly",
+    "planning_horizon_youngest_age": 80,
+    "include_youngest_80th_birthday_payments": true,
+    "adult_eligibility": "graduation",
+    "adult_first_payment": "one_month_after_graduation",
+    "adult_payment_frequency": "monthly",
+    "investment_scope": "long_only_seven_fund_research_universe",
+    "college_backing_proxy": "SGOV",
+    "historical_risk_measure": "monthly_sample_covariance_annualized_by_12",
+    "turnover_measure": "one_way_transition_plus_entered_annual_usage",
+    "hard_check_failure_response": "reject_proposed_allocation_and_review",
+    "support_budget_baseline": "0_real_discount_0_cushion_0_terminal_balance_100_restoration_points_editable",
+    "future_monitoring": "not_simulated_no_future_limit_guarantee"
+  },
+  "unresolved_policy": [],
+  "model_assumptions": [
+    "Future CPI and investment returns are scenario assumptions, not known future observations.",
+    "SGOV is the classroom reserve proxy; CPI liability matching and real-world liquidation timing are not guaranteed.",
+    "Advanced support-budget settings are explicit scenario assumptions, not empirically optimal calibrations.",
+    "Long-only seven-fund scope; historical sample covariance and proposed one-way turnover are decision checks. Future rebalancing and monitoring are not simulated.",
+    "Reject proposed allocations failing hard checks; a backing gap or missed hard minimum is a failure, not authorization to waive obligations."
+  ],
+  "scope": "Payment schedules, CPI college reserve and explicit deterministic funding scenarios. Portfolio estimates, draft adaptive support and explicit stress scenarios are available; results remain conditional, not guarantees."
+}

@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Trust planner: run web app",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv-web/bin/python",
+      "args": ["${workspaceFolder}/run_web.py"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "Trust planner: test API",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv-web/bin/python",
+      "args": ["-m", "unittest", "discover", "-s", "backend/tests", "-v"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ]
+}

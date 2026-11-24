@@ -1,0 +1,82 @@
+{
+  "api_version": "4.3.0",
+  "inputs": {
+    "payment_inputs": {
+      "model_start_date": "2026-01-01",
+      "family_mode": "custom",
+      "starting_ages": [
+        18,
+        18
+      ],
+      "first_college_years": [
+        null,
+        null
+      ],
+      "graduation_dates": [
+        null,
+        null
+      ],
+      "college_annual": "100",
+      "adult_support_enabled": false,
+      "adult_minimum": "20000",
+      "adult_target": "200000",
+      "degree_years": [
+        "1",
+        "1"
+      ]
+    },
+    "annual_inflation_percent": "12"
+  },
+  "model_start_date": "2026-01-01",
+  "annual_inflation_percent": "12",
+  "total_nominal_dollars": "218.84",
+  "children": [
+    {
+      "child_id": 1,
+      "total_nominal_dollars": "109.42"
+    },
+    {
+      "child_id": 2,
+      "total_nominal_dollars": "109.42"
+    }
+  ],
+  "payment_dates": [
+    {
+      "date": "2026-08-01",
+      "total_nominal_dollars": "106.84",
+      "payments": [
+        {
+          "child_id": 1,
+          "semester": 1,
+          "term": "fall",
+          "amount_nominal_dollars": "53.42"
+        },
+        {
+          "child_id": 2,
+          "semester": 1,
+          "term": "fall",
+          "amount_nominal_dollars": "53.42"
+        }
+      ]
+    },
+    {
+      "date": "2027-01-01",
+      "total_nominal_dollars": "112.00",
+      "payments": [
+        {
+          "child_id": 1,
+          "semester": 2,
+          "term": "spring",
+          "amount_nominal_dollars": "56.00"
+        },
+        {
+          "child_id": 2,
+          "semester": 2,
+          "term": "spring",
+          "amount_nominal_dollars": "56.00"
+        }
+      ]
+    }
+  ],
+  "convention": "Nominal scheduled allowances, not proof of payment or funding. Monthly first-day inflation steps after model start, per-child semester amounts rounded to cents, including obligations beyond the funding horizon."
+}

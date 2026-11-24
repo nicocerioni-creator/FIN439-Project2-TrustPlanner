@@ -1,0 +1,132 @@
+{
+  "kind": "trust-planner-analysis-settings",
+  "version": 3,
+  "analysis": {
+    "funding": {
+      "payment_inputs": {
+        "model_start_date": "2026-11-23",
+        "family_mode": "demo",
+        "starting_ages": [
+          8,
+          6,
+          4,
+          2
+        ],
+        "first_college_years": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "graduation_dates": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "college_annual": "50000",
+        "adult_support_enabled": true,
+        "adult_minimum": "20000",
+        "adult_target": "200000",
+        "degree_years": [
+          "4",
+          "4",
+          "4",
+          "4"
+        ]
+      },
+      "opening_balance": "10000000",
+      "college_annual_return_percent": "0",
+      "support_annual_return_percent": "0",
+      "annual_cost_percent": "0",
+      "annual_cpi_change_percent": "2",
+      "reserve_transfer_rule": "protect_before_payments",
+      "include_horizon_day_payments": true,
+      "portfolio_source": {
+        "decision_date": "2026-11-23",
+        "estimation_months": 36,
+        "max_data_age_days": 60,
+        "current_weights": {
+          "VOO": "0",
+          "QQQ": "0",
+          "SCHD": "0",
+          "PAVE": "0",
+          "XLE": "0",
+          "XLV": "0",
+          "SGOV": "100"
+        },
+        "initial_allocation": true,
+        "allocation_style": "balanced_growth",
+        "max_growth_fund_weight_percent": "40",
+        "proposed_weights": null,
+        "turnover_used_percent": "0",
+        "volatility_limit_percent": "25",
+        "turnover_limit_percent": "33",
+        "max_fund_weight_percent": "100",
+        "risk_off_equity_cap_percent": "40",
+        "return_target_percent": "10",
+        "transaction_cost_bps": "0",
+        "pilot_max_percent": "0",
+        "confirm_reserve_proxy": true,
+        "price_csv": null,
+        "source_available_on": null,
+        "confirm_uploaded_provenance": false
+      },
+      "adaptive_policy": {
+        "enabled": true,
+        "real_discount_percent": "0",
+        "buffer_percent": "0",
+        "terminal_real_balance": "0",
+        "max_monthly_restoration_points": "100"
+      },
+      "opening_transaction_cost": "0",
+      "initial_college_shock_percent": "0",
+      "initial_support_shock_percent": "0"
+    },
+    "portfolio": {
+      "decision_date": "2026-11-23",
+      "estimation_months": 36,
+      "max_data_age_days": 60,
+      "current_weights": {
+        "VOO": "0",
+        "QQQ": "0",
+        "SCHD": "0",
+        "PAVE": "0",
+        "XLE": "0",
+        "XLV": "0",
+        "SGOV": "100"
+      },
+      "initial_allocation": true,
+      "allocation_style": "balanced_growth",
+      "max_growth_fund_weight_percent": "40",
+      "proposed_weights": null,
+      "turnover_used_percent": "0",
+      "volatility_limit_percent": "25",
+      "turnover_limit_percent": "33",
+      "max_fund_weight_percent": "100",
+      "risk_off_equity_cap_percent": "40",
+      "return_target_percent": "10",
+      "transaction_cost_bps": "0",
+      "pilot_max_percent": "0",
+      "confirm_reserve_proxy": true,
+      "price_csv": null,
+      "source_available_on": null,
+      "confirm_uploaded_provenance": false
+    },
+    "stress": {
+      "enabled": true,
+      "support_loss_percent": "-35",
+      "college_loss_percent": "-1",
+      "inflation_increase_points": "2",
+      "return_reduction_points": "3",
+      "cost_increase_points": "0.5",
+      "longevity_extension_years": 10,
+      "short_window_months": 12,
+      "long_window_months": 60,
+      "trade_cost_increase_bps": "25",
+      "tighter_volatility_percent": "10",
+      "tighter_fund_cap_percent": "60"
+    },
+    "use_historical_proxy_returns": true
+  }
+}

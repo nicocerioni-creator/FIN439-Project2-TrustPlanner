@@ -1,0 +1,51 @@
+.venv-web/
+frontend/node_modules/
+frontend/.next/
+frontend/tsconfig.tsbuildinfo
+v0-frontend-handoff.zip
+backups/
+__pycache__/
+*.pyc
+.env
+.env.local
+.DS_Store
+
+# Credentials never belong in source, frontend bundles, handoffs or Git uploads.
+.env*
+**/.env*
+*.pem
+*.key
+*.p12
+*.pfx
+.netrc
+.npmrc
+secrets/
+credentials/
+**/secrets/
+**/credentials/
+*credentials*.json
+*service-account*.json
+*.log
+dist/
+.github-upload/
+
+# User financial exports are opt-in for a reviewed publication package.
+outputs/analysis.json
+outputs/analysis-summary.md
+trust_planner_settings*.json
+trust_analysis_settings*.json
+portfolio_funding_analysis*.json
+funding_projection*.json
+college_reserve*.json
+payment_assumptions*.json
+
+# Private college calendar exports
+college_payment_plan*.json
+
+# Private investment-only simulation exports
+investment_growth_simulation*.json
+
+# Private Evidence exports
+trust_results_summary*.html
+trust_evidence_record*.json
+college_calendar*.csv

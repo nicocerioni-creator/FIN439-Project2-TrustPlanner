@@ -1,0 +1,15 @@
+{
+  "folders": [{ "path": "." }],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv-web/bin/python",
+    "terminal.integrated.cwd": "${workspaceFolder}",
+    "search.exclude": {
+      "**/.venv-web/**": true,
+      "**/node_modules/**": true,
+      "**/.next/**": true
+    }
+  },
+  "extensions": {
+    "recommendations": ["ms-python.python", "bradlc.vscode-tailwindcss"]
+  }
+}

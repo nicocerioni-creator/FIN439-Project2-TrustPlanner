@@ -1,0 +1,42 @@
+{
+  "snapshot_available_on": "2026-10-22",
+  "first_price_date": "2021-09-30",
+  "last_price_date": "2026-09-30",
+  "price_basis": "Vendor adjusted monthly closing prices, USD, frozen at original course download; not a vintage history.",
+  "original_lab": "Lab 15/prices.csv (preserved)",
+  "sha256": "fb4a6dfc9eb6d1688cd9d5584f2a796cad48032d41cb93d43d3d3fb5e26e1719",
+  "sources": {
+    "VOO": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/VOO?period1=1630468800&period2=1790827200&interval=1d&includeAdjustedClose=true&events=div%2Csplits",
+      "downloaded_utc": "2026-10-22T21:09:57.225707+00:00"
+    },
+    "QQQ": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?period1=1630468800&period2=1790827200&interval=1d&includeAdjustedClose=true&events=div%2Csplits",
+      "downloaded_utc": "2026-10-22T21:09:57.437234+00:00"
+    },
+    "SCHD": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SCHD?period1=1630468800&period2=1790827200&interval=1d&includeAdjustedClose=true&events=div%2Csplits",
+      "downloaded_utc": "2026-10-22T21:09:57.200634+00:00"
+    },
+    "PAVE": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/PAVE?period1=1630468800&period2=1790827200&interval=1d&includeAdjustedClose=true&events=div%2Csplits",
+      "downloaded_utc": "2026-10-22T21:09:57.230051+00:00"
+    },
+    "XLE": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?period1=1630468800&period2=1790827200&interval=1d&includeAdjustedClose=true&events=div%2Csplits",
+      "downloaded_utc": "2026-10-22T21:09:57.195486+00:00"
+    },
+    "XLV": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XLV?period1=1630468800&period2=1790827200&interval=1d&includeAdjustedClose=true&events=div%2Csplits",
+      "downloaded_utc": "2026-10-22T21:09:57.221079+00:00"
+    },
+    "SGOV": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SGOV?period1=1630468800&period2=1790827200&interval=1d&includeAdjustedClose=true&events=div%2Csplits",
+      "downloaded_utc": "2026-10-22T21:25:32.640101+00:00"
+    }
+  },
+  "official_fund_context": {
+    "VOO": "https://advisors.vanguard.com/investments/products/voo/vanguard-sp-500-etf",
+    "SGOV": "https://www.ishares.com/us/products/314116/ishares-0-3-month-treasury-bond-etf"
+  }
+}

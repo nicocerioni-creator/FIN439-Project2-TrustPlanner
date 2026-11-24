@@ -1,0 +1,486 @@
+{
+  "api_version": "4.3.0",
+  "status": "payment_schedule_only",
+  "calendar_timing_complete": false,
+  "inputs": {
+    "model_start_date": null,
+    "family_mode": "demo",
+    "starting_ages": [
+      8,
+      6,
+      4,
+      2
+    ],
+    "first_college_years": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "graduation_dates": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "college_annual": "50000",
+    "adult_support_enabled": true,
+    "adult_minimum": "20000",
+    "adult_target": "200000",
+    "degree_years": [
+      "4",
+      "4",
+      "4",
+      "4"
+    ]
+  },
+  "policy": {
+    "starting_ages": [
+      8,
+      6,
+      4,
+      2
+    ],
+    "starting_ages_assumed_exact": true,
+    "college_entry_age": 18,
+    "college_entry_rule": "first_august_1_on_or_after_age_18_unless_overridden",
+    "college_allowance_type": "fixed_annual_allowance",
+    "cpi_indexation_basis": "model_start",
+    "deflation_treatment": "benefits_fall_proportionately_with_cpi",
+    "college_funding_end": "graduation",
+    "college_reserve_coverage": "all_remaining_college_payments_through_graduation",
+    "one_semester_annual_fraction": "0.5",
+    "college_payment_timing": "fall_august_1_spring_january_1",
+    "estimated_graduation_rule": "may_31_after_spring_or_december_31_after_fall_editable",
+    "cpi_series": "CPI-U, U.S. city average, all items, not seasonally adjusted",
+    "cpi_update_frequency": "monthly",
+    "cpi_availability_rule": "latest_observation_in_vintage_before_reference_date",
+    "cpi_update_day": "first_day_of_month_before_payments",
+    "cpi_baseline_cutoff": "prior_day_before_model_start",
+    "college_reserve_valuation": "full_undiscounted_remaining_allowance_cpi_adjusted",
+    "data_cost_policy": "free_public_data_no_api_keys_no_paid_fallback",
+    "adult_support_review_frequency": "monthly",
+    "planning_horizon_youngest_age": 80,
+    "include_youngest_80th_birthday_payments": true,
+    "adult_eligibility": "graduation",
+    "adult_first_payment": "one_month_after_graduation",
+    "adult_payment_frequency": "monthly",
+    "investment_scope": "long_only_seven_fund_research_universe",
+    "college_backing_proxy": "SGOV",
+    "historical_risk_measure": "monthly_sample_covariance_annualized_by_12",
+    "turnover_measure": "one_way_transition_plus_entered_annual_usage",
+    "hard_check_failure_response": "reject_proposed_allocation_and_review",
+    "support_budget_baseline": "0_real_discount_0_cushion_0_terminal_balance_100_restoration_points_editable",
+    "future_monitoring": "not_simulated_no_future_limit_guarantee"
+  },
+  "scenario": "reference_payment_settings",
+  "matches_reference_payment_amounts": true,
+  "annual_amounts_model_start_dollars": {
+    "college": "50000",
+    "adult_minimum": "20000",
+    "adult_target": "200000"
+  },
+  "college_semester_amount_model_start_dollars": "25000",
+  "college_obligation_model_start_dollars": "800000",
+  "total_funded_semesters": 32,
+  "timeline_end_month": 12,
+  "beneficiaries": [
+    {
+      "child_id": 1,
+      "starting_age": 8,
+      "degree_years": "4",
+      "graduation_age": null,
+      "graduation_age_is_approximate": true,
+      "college_start_month": null,
+      "graduation_month": null,
+      "college_start_date": null,
+      "graduation_date": null,
+      "first_college_year": null,
+      "adult_support_enabled": true,
+      "adult_eligibility_month": null,
+      "first_adult_payment_month": null,
+      "first_adult_payment_date": null,
+      "already_graduated_at_model_start": false,
+      "total_degree_semesters": 8,
+      "past_semesters_excluded": 0,
+      "funded_semesters": 8,
+      "remaining_funded_degree_years": "4",
+      "college_obligation_model_start_dollars": "200000"
+    },
+    {
+      "child_id": 2,
+      "starting_age": 6,
+      "degree_years": "4",
+      "graduation_age": null,
+      "graduation_age_is_approximate": true,
+      "college_start_month": null,
+      "graduation_month": null,
+      "college_start_date": null,
+      "graduation_date": null,
+      "first_college_year": null,
+      "adult_support_enabled": true,
+      "adult_eligibility_month": null,
+      "first_adult_payment_month": null,
+      "first_adult_payment_date": null,
+      "already_graduated_at_model_start": false,
+      "total_degree_semesters": 8,
+      "past_semesters_excluded": 0,
+      "funded_semesters": 8,
+      "remaining_funded_degree_years": "4",
+      "college_obligation_model_start_dollars": "200000"
+    },
+    {
+      "child_id": 3,
+      "starting_age": 4,
+      "degree_years": "4",
+      "graduation_age": null,
+      "graduation_age_is_approximate": true,
+      "college_start_month": null,
+      "graduation_month": null,
+      "college_start_date": null,
+      "graduation_date": null,
+      "first_college_year": null,
+      "adult_support_enabled": true,
+      "adult_eligibility_month": null,
+      "first_adult_payment_month": null,
+      "first_adult_payment_date": null,
+      "already_graduated_at_model_start": false,
+      "total_degree_semesters": 8,
+      "past_semesters_excluded": 0,
+      "funded_semesters": 8,
+      "remaining_funded_degree_years": "4",
+      "college_obligation_model_start_dollars": "200000"
+    },
+    {
+      "child_id": 4,
+      "starting_age": 2,
+      "degree_years": "4",
+      "graduation_age": null,
+      "graduation_age_is_approximate": true,
+      "college_start_month": null,
+      "graduation_month": null,
+      "college_start_date": null,
+      "graduation_date": null,
+      "first_college_year": null,
+      "adult_support_enabled": true,
+      "adult_eligibility_month": null,
+      "first_adult_payment_month": null,
+      "first_adult_payment_date": null,
+      "already_graduated_at_model_start": false,
+      "total_degree_semesters": 8,
+      "past_semesters_excluded": 0,
+      "funded_semesters": 8,
+      "remaining_funded_degree_years": "4",
+      "college_obligation_model_start_dollars": "200000"
+    }
+  ],
+  "college_semester_payments": [
+    {
+      "semester": 1,
+      "term": "fall",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 1,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 2,
+      "term": "spring",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 1,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 3,
+      "term": "fall",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 1,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 4,
+      "term": "spring",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 1,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 5,
+      "term": "fall",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 1,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 6,
+      "term": "spring",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 1,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 7,
+      "term": "fall",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 1,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 8,
+      "term": "spring",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 1,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 1,
+      "term": "fall",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 2,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 2,
+      "term": "spring",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 2,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 3,
+      "term": "fall",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 2,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 4,
+      "term": "spring",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 2,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 5,
+      "term": "fall",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 2,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 6,
+      "term": "spring",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 2,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 7,
+      "term": "fall",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 2,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 8,
+      "term": "spring",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 2,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 1,
+      "term": "fall",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 3,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 2,
+      "term": "spring",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 3,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 3,
+      "term": "fall",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 3,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 4,
+      "term": "spring",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 3,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 5,
+      "term": "fall",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 3,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 6,
+      "term": "spring",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 3,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 7,
+      "term": "fall",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 3,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 8,
+      "term": "spring",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 3,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 1,
+      "term": "fall",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 4,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 2,
+      "term": "spring",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 4,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 3,
+      "term": "fall",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 4,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 4,
+      "term": "spring",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 4,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 5,
+      "term": "fall",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 4,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 6,
+      "term": "spring",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 4,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 7,
+      "term": "fall",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 4,
+      "amount_model_start_dollars": "25000"
+    },
+    {
+      "semester": 8,
+      "term": "spring",
+      "date": null,
+      "month": null,
+      "academic_year": null,
+      "child_id": 4,
+      "amount_model_start_dollars": "25000"
+    }
+  ],
+  "planning_horizon_months": 936,
+  "unresolved_policy": [],
+  "model_assumptions": [
+    "Future CPI and investment returns are scenario assumptions, not known future observations.",
+    "SGOV is the classroom reserve proxy; CPI liability matching and real-world liquidation timing are not guaranteed.",
+    "Advanced support-budget settings are explicit scenario assumptions, not empirically optimal calibrations.",
+    "Long-only seven-fund scope; historical sample covariance and proposed one-way turnover are decision checks. Future rebalancing and monitoring are not simulated.",
+    "Reject proposed allocations failing hard checks; a backing gap or missed hard minimum is a failure, not authorization to waive obligations."
+  ],
+  "warnings": [
+    "All monetary schedule outputs are model-start dollars, not projected nominal payments.",
+    "The college obligation is not a valuation of the assets required today to guarantee payments.",
+    "Funding adequacy, portfolio selection and mandate compliance have not been evaluated.",
+    "Ages are assumed exact at model start; birth dates are inferred, not independently supplied.",
+    "College is paid August 1 and January 1. Past semester dates are excluded from the remaining obligation.",
+    "Choose a model start date to calculate academic calendar dates. No date has been silently selected."
+  ],
+  "funding_evaluation": null,
+  "portfolio_evaluation": null
+}

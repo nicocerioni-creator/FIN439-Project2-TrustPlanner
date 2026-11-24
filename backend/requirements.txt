@@ -1,0 +1,4 @@
+# Pinned direct dependencies; requirements.lock.txt records the complete installed set.
+fastapi==0.165.0
+uvicorn==0.54.0
+httpx==0.28.1
