@@ -1,6 +1,6 @@
 {
   "scope": "Reviewed app/reference results and written materials before video evidence; not a completed Brightspace submission.",
-  "generated_utc": "2026-11-24T02:51:45.156945+00:00",
+  "generated_utc": "2026-11-24T03:04:36.834512+00:00",
   "prediction_commit": "81479f8587d1f0492504fdabe6ad245a514e63aa",
   "files": [
     {
@@ -297,11 +297,6 @@
       "path": "docs/streamlit-fallback.md",
       "sha256": "5f09c406254562030bc384853c5bf0fbaa752229b65c38ca7178043ee28ce695",
       "bytes": 4087
-    },
-    {
-      "path": "docs/submission-manifest.md",
-      "sha256": "0404579d81d718c0e3086069b926adbeaeee3fc1ea4b224850e907be6729468d",
-      "bytes": 6528
     },
     {
       "path": "docs/v0-integration-validation.md",
@@ -732,6 +727,16 @@
       "path": "tests/test_source_package.py",
       "sha256": "4fa9c6b4fdad8a2f3d4ef097959d0731bdc83f3e929ab3f892940d8617eee0dc",
       "bytes": 1971
+    },
+    {
+      "path": "docs/submission-manifest.md",
+      "sha256": "5e16f5abef0041d9600cc9dbbc4976a5c9117a6782bf32ee7379ef6c4d6b2bf7",
+      "bytes": 6581
+    },
+    {
+      "path": "docs/video-access-check.json",
+      "sha256": "c0f09b8749ad3ebb8e974cc226e1dae8a57008b96ede97c8f8ea420ad66b7745",
+      "bytes": 1201
     }
   ]
 }

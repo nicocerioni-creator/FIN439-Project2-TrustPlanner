@@ -28,8 +28,8 @@ Repository: https://github.com/nicocerioni-creator/FIN439-Project2-TrustPlanner
 
 | Item | Planned title | YouTube location | Actual duration | Actual timestamp indices | Transcript and viewer-access verification |
 |---|---|---|---|---|---|
-| Video1 |How the trust planner and my thinking changed |Pending student URL |Pending; must be≤3:00 |Pending actual recording |Pending; include actual transcript in docs/ or link it here |
-| Video2 |Trust Planner code walkthrough |Pending student URL |Pending; must be≤5:00 |Pending actual recording |Pending; verify substantive finance terms/tickers/figures |
+| Video1 |FIN439 Project 2 Video 1 |https://youtu.be/d0nRTQOpTxs |2:54; within3:00 |Pending caption/content review |Unauthenticated playerOK; English caption track present; transcript/content review pending |
+| Video2 |FIN439 Project 2 Video 2 |https://youtu.be/xop9V1m5MFs |3:46; within5:00 |Pending caption/content review |Unauthenticated playerOK; English caption track present; transcript/content review pending |
 | Video3 |Committee decision: research adoption,0% live allocation |Pending student URL |Pending; must be≤5:00 |Pending actual recording; opens with app running live |Pending; verify live opening, attribution, captions and logged-out access |
 
 Draft scripts are review/recording aids and are labelled as such. They are not represented as actual transcripts. All three videos must begin with AI attribution/your own analysis and education/not-investment-advice statements. Optional deployment: **none required or claimed**; the app launches locally from README.

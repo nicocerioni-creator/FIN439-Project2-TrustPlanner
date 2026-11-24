@@ -1,0 +1,30 @@
+{
+  "videos": {
+    "1": {
+      "url": "https://youtu.be/d0nRTQOpTxs",
+      "title": "FIN439 Project 2 Video 1",
+      "duration_seconds": 174,
+      "limit_seconds": 180,
+      "within_limit": true,
+      "unauthenticated_player_status": "OK",
+      "english_caption_track_present": true,
+      "caption_text_review": "pending retrieval/review",
+      "visual_content_review": "not performed",
+      "checked_utc": "2026-11-24T03:04:14.797188+00:00",
+      "method": "Unauthenticated YouTube watch-page player metadata; no account cookies used. This is not a full playback/content verification."
+    },
+    "2": {
+      "url": "https://youtu.be/xop9V1m5MFs",
+      "title": "FIN439 Project 2 Video 2",
+      "duration_seconds": 226,
+      "limit_seconds": 300,
+      "within_limit": true,
+      "unauthenticated_player_status": "OK",
+      "english_caption_track_present": true,
+      "caption_text_review": "pending retrieval/review",
+      "visual_content_review": "not performed",
+      "checked_utc": "2026-11-24T03:04:14.797448+00:00",
+      "method": "Unauthenticated YouTube watch-page player metadata; no account cookies used. This is not a full playback/content verification."
+    }
+  }
+}
