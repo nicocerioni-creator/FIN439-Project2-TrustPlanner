@@ -78,7 +78,7 @@ On Windows use `py reproduce_submission.py`. The script switches to `.venv-web` 
 - [Submission manifest and video links](docs/submission-manifest.md)
 - [Student’s unedited prediction](docs/ai-off-prediction.txt)
 
-The reference results, completed locked experiment and written reports are published. The manifest identifies video recording, caption/access verification and Brightspace submission as remaining steps. An honest reject or research-only decision is valid; a completed model path is not proof that a committee should invest real money.
+The reference results, completed locked experiment and written reports are published. All three video links and the supplied Video 2/3 transcripts are in the manifest. Video 3 is retained at 7:01 by student choice, exceeding the 5:00 limit. Video 1 transcript review, remaining content/access checks and Brightspace submission remain pending. An honest reject or research-only decision is valid; a completed model path is not proof that a committee should invest real money.
 
 ## What the model does
 

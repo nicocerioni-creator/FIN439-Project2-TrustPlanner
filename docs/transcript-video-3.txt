@@ -1,0 +1,129 @@
+00:00:03.874 --> 00:00:18.874
+I used OpenAI Codex to help program, test and document this app and VEO to help design the interface. The analysis and final decision are my own. This project is for education and research, not investment advice, and it does not guarantee future results.
+
+00:00:20.368 --> 00:00:37.368
+Uh, my app is Trust Planner, uh, and I want it to be used as a research and periodic review process. Um, my committee recommendation is to adopt it, not to invest actual capital into, or live allocation into, but as a research tool.
+
+00:00:37.369 --> 00:00:48.786
+So there's a couple applications here. This is the main landing page. We have the scheduled payments. This is the total amount of money that needs to be going into the college fund.
+
+00:00:49.259 --> 00:01:10.259
+As a whole, number of funded semesters, adult support, which is payments to the adults once they graduate. And then here's a short schedule of what they have. This family has four children, each going to school for four years. Um, they're currently 8, 6, 4, and 2 years old, and this shows their projections or when they have to be paid off.
+
+00:01:11.351 --> 00:01:19.351
+Um, and then right here, total fund semesters, etc, etcetera, when their college starts, graduation, first adult payment, all this stuff.
+
+00:01:19.521 --> 00:01:35.521
+A little bit more information, and then here's where you can actually edit and make your own custom family. So the demo family investment starts tomorrow. College allowance, children, age, degree number of years, and then the amount of
+
+00:01:36.146 --> 00:01:40.146
+Adult support, which is payments that are given after they graduate college.
+
+00:01:40.748 --> 00:01:46.748
+example would be $20,000 minimum to each child every year until they turn 80. Moving on.
+
+00:01:47.593 --> 00:01:53.593
+You have the college overview. Um, so this is the future value of what the.
+
+00:01:54.806 --> 00:02:04.806
+cost will be with a 2% inflation. I've been using the CPI index. This is just more of an overview from that first page. Um, so.
+
+00:02:06.302 --> 00:02:20.302
+Right here we have what remains, what obligation remains for each child individually, so obviously child 4 being the youngest child is going to have the most expensive because of, uh, most expensive tuition because of inflation. Um, and you can see that
+
+00:02:20.618 --> 00:02:25.618
+If I increase is here, or sorry, if I increase this to three,
+
+00:02:27.401 --> 00:02:29.401
+It will update automatically.
+
+00:02:30.624 --> 00:02:32.624
+Let me just put this back.
+
+00:02:33.769 --> 00:02:49.769
+And there we go, there's a base case. So right here is the schedule of when the payments go out, um, by date and by child. You can see that when they get combined, you have the total amount right here that gets added up. And while I was actually coding this with Codex.
+
+00:02:49.999 --> 00:03:03.999
+two would not line up, so I worked with Codex for about half an hour to actually make this chart right here, add up all the amounts from down here from each child to calculate this as a.
+
+00:03:04.782 --> 00:03:08.782
+The joint calculation instead of being two separate calculations.
+
+00:03:12.095 --> 00:03:14.095
+Moving on, funding and cash flows.
+
+00:03:14.061 --> 00:03:18.061
+This is the opening trust balance, inflation again.
+
+00:03:18.183 --> 00:03:23.183
+Um, investments, this gets pulled from the next tab, which I'll show you here in a second.
+
+00:03:23.183 --> 00:03:32.330
+Optional expenses, so you could add, uh, what it costs to hold this active management, or an upfront cost.
+
+00:03:33.021 --> 00:03:35.021
+Adult support.
+
+00:03:35.903 --> 00:03:37.903
+All of these are just more, uh…
+
+00:03:38.603 --> 00:03:45.603
+changes you can make individually, you can play with it if you'd like. And then right here, we have the ending.
+
+00:03:46.813 --> 00:03:51.813
+amount of the trust with the nominal and the real within inflation adjusted.
+
+00:03:53.667 --> 00:03:59.667
+And then there's 3 different supports. So the minimum is you have.
+
+00:04:00.072 --> 00:04:19.072
+$20,000 in adult payments, goal support is $200,000 in supports, and then adaptive is somewhere in the middle, depending on the goals, which is why these have such, uh, wide ranges. Moon on portfolio and stress, I think this is the coolest one. Um, you have low risk, balanced growth, regressed growth, and a custom case where you can change the funds yourself.
+
+00:04:18.995 --> 00:04:31.995
+Um, I've added, uh, 7 different funds that you can choose the different weights of, and they each have their own historical expected returns, volatility, etc. Um, right here, you can see the historical return versus a risk.
+
+00:04:32.911 --> 00:04:37.911
+And you can see that right here, you have the different main categories.
+
+00:04:39.066 --> 00:04:46.066
+What their estimated return, risk estimates, investment dates, their horizon, and the maximum data age.
+
+00:04:46.718 --> 00:05:06.718
+We used a data set that's about five years from the 2020 until 2026. You can also change what the starting weights are right here, and you have some extra additions. This section right here underneath this check mark are, um, from my mandate that I have made.
+
+00:05:07.588 --> 00:05:13.588
+Um, in my addition A, so these can get changed to whatever you'd like, but those are just part of my mandate.
+
+00:05:15.126 --> 00:05:29.126
+We have more stress assumptions, more things you can edit to make it more interesting. Um, and you can also upload your own CSV, so you could add your own funds, or update more, um, up-to-date data as well.
+
+00:05:29.127 --> 00:05:45.768
+And then right here you have the growth metrics. So you have the weights of the different funds, you have the compound interest growth, you have volatility historical, because you can't calculate volatility into the future.
+
+00:05:45.874 --> 00:05:54.874
+Sharpe ratio, and then you have, we have a Monte Carlo simulation of what this would actually give you if you start with $100. So if we just do that real quick, bang.
+
+00:05:55.241 --> 00:05:58.241
+of this with both the regular
+
+00:05:58.507 --> 00:06:03.507
+Y versus X, and we also have the logarithmic scale on the y-axis right here.
+
+00:06:04.426 --> 00:06:05.426
+Um.
+
+00:06:08.343 --> 00:06:20.343
+Then moving on, the last one is evidence and exports. This just shows you like a general overview of the entire app with all the different things added up. This is the returns that this would give you.
+
+00:06:20.344 --> 00:06:23.992
+And then you can also download the different reports, um…
+
+00:06:25.196 --> 00:06:39.196
+Which is the plans, the family funding portfolio and stress settings, upload a price panel and available current results as well. And then here's my mandate, which includes all these stuff for my addition.
+
+00:06:39.625 --> 00:06:40.625
+B.
+
+00:06:41.003 --> 00:06:56.003
+You can read through that if you'd like. Assumptions, and then, of course, a disclaimer that this is an educational tool only. Um, I hope you enjoy my app, and that you found it interesting, and I hope that you have time to play around with it, and
+

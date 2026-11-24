@@ -2,7 +2,7 @@
 
 Repository: https://github.com/nicocerioni-creator/FIN439-Project2-TrustPlanner
 
-**Decision:** adopt the research-monitoring process; authorize0–0% live allocation. The app, executed analysis and written reports are ready for review. **Videos, actual transcript checks and Brightspace submission are still pending; this is not a claim of completed submission.**
+**Decision:** adopt the research-monitoring process; authorize0–0% live allocation. The app, executed analysis and written reports are ready for review. **All three video links are recorded. Video 3 is retained at 7:01 by student choice and exceeds the 5:00 limit. Video 1 transcript review, remaining video-content checks and Brightspace submission are pending; this is not a claim of completed submission.**
 
 ## Written and executable artifacts
 
@@ -22,17 +22,17 @@ Repository: https://github.com/nicocerioni-creator/FIN439-Project2-TrustPlanner
 | Cold-start record | https://github.com/nicocerioni-creator/FIN439-Project2-TrustPlanner/blob/main/docs/cold-start-check.json |Fresh venv/npm install and app launch; no first setup failure observed; macOS-only execution claim |
 | Requirements audit | https://github.com/nicocerioni-creator/FIN439-Project2-TrustPlanner/blob/main/docs/final-submission-checklist.md |All eight base requirements mapped; video/submission items explicitly pending |
 | Recording guide | https://github.com/nicocerioni-creator/FIN439-Project2-TrustPlanner/blob/main/docs/video-recording-guide.md |Draft narration and screens to show; not a substitute for actual transcripts |
-| Source/result freeze hashes | https://github.com/nicocerioni-creator/FIN439-Project2-TrustPlanner/blob/main/docs/submission-freeze.json |Hash inventory identifies the pre-video reviewed materials; refresh after video evidence is finalized |
+| Source/result freeze hashes | https://github.com/nicocerioni-creator/FIN439-Project2-TrustPlanner/blob/main/docs/submission-freeze.json |Hash inventory identifies the current published materials, including video records; excludes its own file |
 
-## Videos — fill only after actual recording and viewer verification
+## Recorded videos
 
-| Item | Planned title | YouTube location | Actual duration | Actual timestamp indices | Transcript and viewer-access verification |
+| Item | Actual title | YouTube location | Actual duration | Transcript and timestamp indices | Access/content status |
 |---|---|---|---|---|---|
-| Video1 |FIN439 Project 2 Video 1 |https://youtu.be/d0nRTQOpTxs |2:54; within3:00 |Pending caption/content review |Unauthenticated playerOK; English caption track present; transcript/content review pending |
-| Video2 |FIN439 Project 2 Video 2 |https://youtu.be/xop9V1m5MFs |3:46; within5:00 |Pending caption/content review |Unauthenticated playerOK; English caption track present; transcript/content review pending |
-| Video3 |Committee decision: research adoption,0% live allocation |Pending student URL |Pending; must be≤5:00 |Pending actual recording; opens with app running live |Pending; verify live opening, attribution, captions and logged-out access |
+| Video 1 | FIN439 Project 2 Video 1 | https://youtu.be/d0nRTQOpTxs | 2:54; within 3:00 | https://github.com/nicocerioni-creator/FIN439-Project2-TrustPlanner/blob/main/docs/video-transcripts.md | Unauthenticated player OK; English caption track; linked YouTube captions are the transcript source, per student; substantive review pending |
+| Video 2 | FIN439 Project 2 Video 2 | https://youtu.be/xop9V1m5MFs | 3:46; within 5:00 | https://github.com/nicocerioni-creator/FIN439-Project2-TrustPlanner/blob/main/docs/transcript-video-2.txt — opening 0:03; architecture 0:21; API 0:36; funding 1:11; decision 1:55; locked audit 3:10 | Supplied caption export included; opening statements present in transcript; audio/visual review not complete |
+| Video 3 | FIN439 Project 2 Video 3 | https://youtu.be/7W_sYQ3m3bk | 7:01; retained by student choice; exceeds 5:00 | https://github.com/nicocerioni-creator/FIN439-Project2-TrustPlanner/blob/main/docs/transcript-video-3.txt — opening 0:04; recommendation 0:20; college 1:48; funding 3:12; portfolio 4:00; evidence 6:08 | Unauthenticated player OK; supplied caption export included; live opening/content verification incomplete |
 
-Draft scripts are review/recording aids and are labelled as such. They are not represented as actual transcripts. All three videos must begin with AI attribution/your own analysis and education/not-investment-advice statements. Optional deployment: **none required or claimed**; the app launches locally from README.
+Transcript corrections, fuller timestamp indices and spoken-versus-written discrepancies: https://github.com/nicocerioni-creator/FIN439-Project2-TrustPlanner/blob/main/docs/video-transcripts.md . These notes preserve the recordings and original caption text; they do not claim YouTube captions were edited. Draft scripts remain preparation aids. Optional deployment: none required or claimed; the app launches locally from README.
 
 ## Freeze and submit checklist
 
@@ -42,7 +42,10 @@ Draft scripts are review/recording aids and are labelled as such. They are not r
 - [x] Source is allowlisted/scanned; no owner secrets, .env or private client inputs are submitted. The trust amounts are the fictional classroom reference.
 - [x] AI/education statements open README and memo; draft video openings supplied.
 - [ ] Verify all final repository paths publicly after the materials commit.
-- [ ] Add the three actual unlisted YouTube URLs, durations, timestamp indices and transcript locations.
+- [x] Record the three actual YouTube URLs and durations; add timestamp indices and supplied transcript exports for Videos 2 and 3.
+- [x] Link Video 1 YouTube captions/transcript, as requested by Nicolas.
+- [ ] Independently review Video 1 transcript content and timestamp index.
+- [ ] Video 3 duration requirement: unmet; original 7:01 retained by student choice.
 - [ ] Verify instructor/viewer access without owner login and correct substantive captions.
 - [ ] Refresh the final freeze inventory after video evidence is added.
 - [ ] Attach the **same final** docs/decision-memo.md, docs/validation-and-ai-use.md and this manifest to Brightspace; include transcript files/links as required.

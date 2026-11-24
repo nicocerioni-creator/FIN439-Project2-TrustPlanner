@@ -1,0 +1,66 @@
+00:00:02.920 --> 00:00:09.920
+I used OpenAI Codex for programming, testing, and drafting, NVO for interface design and analysis.
+
+00:00:11.694 --> 00:00:19.694
+Or for interface design, the analysis and decisions are my own. This project is for education, research, and not investment advice, and does not guarantee future results.
+
+00:00:20.744 --> 00:00:30.744
+This app uses a Next.js interface and a Python fast API backend. The README explains how to install and launch both, with step-by-step instructions.
+
+00:00:35.822 --> 00:00:48.822
+Back end slash main.py. Uh, payment request validates family ages, degree lengths, and allowances, and dates before the Python service builds a payment schedule. Moving on to the portfolio engine.
+
+00:00:50.121 --> 00:00:53.121
+The portfolio engine compares baselines,
+
+00:00:54.578 --> 00:01:02.578
+Uh, any constraint candidate check in college backing, volatility, turnover, concentration, and the dated VOO signal.
+
+00:01:10.810 --> 00:01:12.810
+Bonin projection?
+
+00:01:20.817 --> 00:01:28.817
+Bunny's Ascent level accounting. This block records the first unpaid payment and stops a path instead of reporting an age 80 balance.
+
+00:01:29.565 --> 00:01:31.565
+Adaptive support.
+
+00:01:36.496 --> 00:01:44.496
+The monthly review budgets for future college and minimal support then pays an affordable share of the gap towards the adult goal.
+
+00:01:55.371 --> 00:02:07.371
+Product evaluation. These branches reject failed or incomplete checks, and with our 0% pilot ceiling, approved research use without authorizing live capital.
+
+00:02:11.290 --> 00:02:13.290
+Portfolio sensitivity?
+
+00:02:15.738 --> 00:02:26.738
+These cases change estimation windows, costs, and constraints individually. Reporting missing data or infeasibility instead of silently substituted assumptions.
+
+00:02:27.929 --> 00:02:29.929
+reproduce submission.
+
+00:02:31.171 --> 00:02:36.171
+This command load C sorry this command.
+
+00:02:36.017 --> 00:02:44.017
+Loads of frozen reference sentence and reproduces the exact analysis, college calendar, and visible results.
+
+00:02:45.842 --> 00:02:47.842
+run changed input.
+
+00:02:54.048 --> 00:03:04.048
+This line changes only annual inflation from 2% to 4% after the verified prediction lock check. This record contains… oops, sorry about that.
+
+00:03:05.692 --> 00:03:07.692
+That is right here.
+
+00:03:10.099 --> 00:03:22.099
+Locked input audit. This record contains the prediction commit, publication verification time, and file hashes, showing that the prediction was locked before the experiment was run.
+
+00:03:23.849 --> 00:03:39.849
+These are conditional projections, not wealth forecasts. Short historical data, fixed future returns, and unverified reserve liquidity support research use, not a live money recommendation. And remember, this is an educational tool, not investment advice.
+
+00:03:40.920 --> 00:03:41.920
+Thank you.
+

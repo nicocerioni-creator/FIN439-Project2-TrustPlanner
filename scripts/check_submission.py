@@ -30,5 +30,5 @@ def main():
   formatted='${:,.2f}'.format(float(value));assert formatted in memo and formatted in validation
  assert len(baseline['portfolios'])>=4 and len(baseline['stress_tests'])==5 and len(baseline['portfolio_sensitivities'])==5
  print('PASS: exact one-input change, public-commit-before-run order, frozen hashes, allocation/decision, opening statements and written numbers.')
- print('PENDING: actual YouTube URLs, durations/transcripts/viewer access and Brightspace receipt; scripts are not verified transcripts.')
+ print('VIDEO STATUS: all three URLs recorded; Video 3 exceeds the 5-minute limit and is retained by student choice. Video 1 transcript, full audiovisual review and Brightspace receipt remain pending.')
 if __name__=='__main__':main()

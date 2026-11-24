@@ -11,7 +11,9 @@
       "caption_text_review": "pending retrieval/review",
       "visual_content_review": "not performed",
       "checked_utc": "2026-11-24T03:04:14.797188+00:00",
-      "method": "Unauthenticated YouTube watch-page player metadata; no account cookies used. This is not a full playback/content verification."
+      "method": "Unauthenticated YouTube watch-page player metadata; no account cookies used. This is not a full playback/content verification.",
+      "transcript_url": "https://www.youtube.com/watch?v=d0nRTQOpTxs",
+      "transcript_source": "Student confirms his transcript was used to create the published captions; linked YouTube captions/transcript is the requested transcript location."
     },
     "2": {
       "url": "https://youtu.be/xop9V1m5MFs",
@@ -21,10 +23,27 @@
       "within_limit": true,
       "unauthenticated_player_status": "OK",
       "english_caption_track_present": true,
-      "caption_text_review": "pending retrieval/review",
+      "caption_text_review": "Local supplied transcript reviewed against project terminology and written results; not independently audio-verified. Original wording retained; corrections and limitations are listed in docs/video-transcripts.md. YouTube captions were not edited.",
       "visual_content_review": "not performed",
       "checked_utc": "2026-11-24T03:04:14.797448+00:00",
-      "method": "Unauthenticated YouTube watch-page player metadata; no account cookies used. This is not a full playback/content verification."
+      "method": "Unauthenticated YouTube watch-page player metadata; no account cookies used. This is not a full playback/content verification.",
+      "transcript_repository_path": "docs/transcript-video-2.txt"
+    },
+    "3": {
+      "url": "https://youtu.be/7W_sYQ3m3bk",
+      "title": "FIN439 Project 2 Video 3",
+      "duration_seconds": 421,
+      "limit_seconds": 300,
+      "within_limit": false,
+      "unauthenticated_player_status": "OK",
+      "english_caption_track_present": true,
+      "caption_text_review": "Local supplied transcript reviewed against project terminology and written results; not independently audio-verified. Original wording retained; corrections and limitations are listed in docs/video-transcripts.md. YouTube captions were not edited.",
+      "visual_content_review": "not performed",
+      "checked_utc": "2026-11-24T03:23:52.907587+00:00",
+      "method": "Unauthenticated YouTube watch-page metadata",
+      "required_action": "Student explicitly chose to retain the original 7:01 video; the published 5:00 requirement remains unmet.",
+      "student_choice": "Retain original video and link; no trimming/re-recording requested.",
+      "transcript_repository_path": "docs/transcript-video-3.txt"
     }
   }
 }

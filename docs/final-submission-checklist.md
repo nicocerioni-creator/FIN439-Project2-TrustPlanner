@@ -11,13 +11,13 @@ Audit basis: the eight base requirements and the Project2-specific instructions 
 | Stress estimates/window/costs/constraints and stop condition |PASS: five funding cases plus five allocation sensitivities; invalid/infeasible conditions reject; payment shortfall stops path |backend/product_evaluation.py; backend/portfolio_sensitivity.py; visible results |
 | Locked Changed-Input Record |PASS: student text publicly committed before experiment; one input2%→4%; actual/expected/decision effect/diagnosis and hashes preserved |docs/ai-off-prediction.txt; docs/locked-input-audit.json; docs/validation-and-ai-use.md |
 | Recommendation/range/monitored triggers/committee ask |PASS: adopt research process, authorize0–0% live capital, stated conditions and reversal triggers |Memo; visible output; app committee section |
-| Opening AI and educational statements |PASS in README/memo; supplied at start of all draft scripts. Actual recordings still need verification |README; memo; docs/video-*-script.md |
-| Three YouTube links, duration limits and actual transcripts |PENDING STUDENT RECORDINGS/URLS; scripts are not represented as verified transcripts |docs/submission-manifest.md; recording guide |
-| Viewer access and cross-artifact consistency |Repository access checked without authentication; video access/duration/captions pending actual links |Manifest and validation report |
+| Opening AI and educational statements |PASS in README/memo; supplied at start of all draft scripts. Video 2/3 supplied transcripts contain the opening statements; Video 1 and audiovisual checks remain incomplete |README; memo; docs/video-*-script.md |
+| Three YouTube links, duration limits and actual transcripts |Three URLs recorded; Videos 1/2 meet time caps; Video 3 is 7:01 and exceeds 5:00, retained by student choice. Video 2/3 supplied transcripts included; Video 1 transcript review pending |docs/submission-manifest.md; recording guide |
+| Viewer access and cross-artifact consistency |Repository access checked without authentication; unauthenticated video player metadata OK; caption tracks present. Supplied transcripts reviewed with discrepancies documented; complete audio/visual review pending |Manifest and validation report |
 | Same Markdown files attached to Brightspace |PENDING FINAL SUBMISSION; no receipt claimed |Final decision-memo.md, validation-and-ai-use.md and manifest |
 | No credentials/private client data |Scanned allowlisted source and reviewed fictional trust outputs; no .env/API key required. No unrelated course folder is uploaded |prepare_github_upload.py; scripts/source_package.py |
 
-The app is a research/planning process, not an approved live-money management service. The committee action is not a nonzero pilot, and the high long-horizon balances are not forecasts. Videos and Brightspace remain genuine outstanding requirements.
+The app is a research/planning process, not an approved live-money management service. The committee action is not a nonzero pilot, and the high long-horizon balances are not forecasts. Video duration/content/transcript exceptions and Brightspace remain genuine outstanding requirements.
 
 ## Six published evidence areas
 
