@@ -1,6 +1,6 @@
 {
   "scope": "Current app, reference results, written materials and video evidence; excludes this inventory itself. Video 3 duration exception and incomplete audiovisual checks are documented. Not a Brightspace receipt.",
-  "generated_utc": "2026-11-24T03:30:40.384728+00:00",
+  "generated_utc": "2026-11-24T03:31:26.122574+00:00",
   "prediction_commit": "81479f8587d1f0492504fdabe6ad245a514e63aa",
   "files": [
     {
@@ -300,8 +300,8 @@
     },
     {
       "path": "docs/submission-manifest.md",
-      "sha256": "3d752a6b9a1fe3b7a0e0af43559378f8ded433a6853ac5152d5eb0a1b2980df1",
-      "bytes": 7534
+      "sha256": "7b3159dd978a6dc82da6cfba6e159e3dd80f7c85f2bfd63d29344ceb025e4272",
+      "bytes": 7618
     },
     {
       "path": "docs/transcript-video-2.txt",

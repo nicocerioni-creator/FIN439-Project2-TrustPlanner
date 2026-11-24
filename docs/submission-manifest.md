@@ -41,13 +41,13 @@ Transcript corrections, fuller timestamp indices and spoken-versus-written discr
 - [x] Memo, visible output and validation agree on reference values and the0% live-allocation decision.
 - [x] Source is allowlisted/scanned; no owner secrets, .env or private client inputs are submitted. The trust amounts are the fictional classroom reference.
 - [x] AI/education statements open README and memo; draft video openings supplied.
-- [ ] Verify all final repository paths publicly after the materials commit.
+- [x] Verified the unauthenticated public GitHub tree against all 150 frozen files at commit 9200206f5b9047aa43f7479198e8fd13d7fd9cdf.
 - [x] Record the three actual YouTube URLs and durations; add timestamp indices and supplied transcript exports for Videos 2 and 3.
 - [x] Link Video 1 YouTube captions/transcript, as requested by Nicolas.
 - [ ] Independently review Video 1 transcript content and timestamp index.
 - [ ] Video 3 duration requirement: unmet; original 7:01 retained by student choice.
 - [ ] Verify instructor/viewer access without owner login and correct substantive captions.
-- [ ] Refresh the final freeze inventory after video evidence is added.
+- [x] Refreshed the final freeze inventory with the recorded video evidence and transcript links.
 - [ ] Attach the **same final** docs/decision-memo.md, docs/validation-and-ai-use.md and this manifest to Brightspace; include transcript files/links as required.
 - [ ] Complete Brightspace submission and preserve the first successful receipt. No receipt is claimed yet.
 
