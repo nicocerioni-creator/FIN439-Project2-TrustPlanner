@@ -1,6 +1,6 @@
 {
   "scope": "Reviewed app/reference results and written materials before video evidence; not a completed Brightspace submission.",
-  "generated_utc": "2026-11-24T02:44:21.553402+00:00",
+  "generated_utc": "2026-11-24T02:51:45.156945+00:00",
   "prediction_commit": "81479f8587d1f0492504fdabe6ad245a514e63aa",
   "files": [
     {
@@ -320,8 +320,8 @@
     },
     {
       "path": "docs/video-2-script.md",
-      "sha256": "ad9baa683f990fbfcc0537d0fae1c94c97b83e46c4bf3bf0f2599c927553931b",
-      "bytes": 7156
+      "sha256": "eb64c84966be7a22e5e8442a019d2e8d3c85bb5bc9bbed465c55756a03adeb58",
+      "bytes": 2788
     },
     {
       "path": "docs/video-3-script.md",
