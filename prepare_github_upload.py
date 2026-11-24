@@ -18,7 +18,9 @@ def main():
     options = parser.parse_args()
     sources = selected_files(ROOT)
     if options.include_results:
-        for name in ('outputs/analysis.json','outputs/analysis-summary.md'):
+        required=('outputs/analysis.json','outputs/analysis-summary.md')
+        optional=('outputs/college-calendar.json','outputs/changed-input.json','outputs/changed-college-calendar.json','outputs/changed-input-comparison.json')
+        for name in (*required,*(n for n in optional if (ROOT/n).is_file())):
             result=ROOT/name
             if not result.is_file(): raise SystemExit('Run the saved-plan replay before including reviewed results.')
             if result.is_symlink(): raise SystemExit('Result symlinks are not permitted.')

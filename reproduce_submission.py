@@ -41,7 +41,8 @@ def summary(value,calendar):
       '', 'Educational and research use only; not investment advice or a guarantee.', '', '# Frozen reference results', '',
       f"Decision/model start: **{request['portfolio']['decision_date']}**. Opening trust: **{money(fund['opening_balance'])}**. Annual inflation scenario: **{fund['annual_cpi_change_percent']}%**.",
       f"Data captured: {card['snapshot_available_on']}; last price: {card['last_price_date']}; estimation window: {request['portfolio']['estimation_months']} monthly returns. Admission: {card['admission']}.",
-      f"Data SHA256: `{card['sha256']}`.", '',f"Committee decision: **{value['recommendation']['action']}**.",
+      f"Data SHA256: `{card['sha256']}`.",
+      f"Limits: volatility≤{request['portfolio']['volatility_limit_percent']}%; proposed one-way annual turnover≤{request['portfolio']['turnover_limit_percent']}%; initial allocation excluded={request['portfolio']['initial_allocation']}. Opening transaction cost={request['portfolio']['transaction_cost_bps']}bp; annual additional cost={fund['annual_cost_percent']}%; setup cost={money(fund.get('opening_transaction_cost',0))}.", '',f"Committee decision: **{value['recommendation']['action']}**.",
       f"Authorized/proposed allocation range: **{value['recommendation'].get('allocation_range_percent_of_support_capital',[0,0])}% of long-term capital**. No automatic trade.", '',
       '| Portfolio | Arithmetic return | Historical CAGR | Historical volatility | Mandate verdict |', '|---|---:|---:|---:|---|']
     for p in value['portfolios']:lines.append(f"| {p['name']} | {p['historical_arithmetic_return_percent']:.2f}% | {p['historical_constant_mix_cagr_percent']:.2f}% | {p['annualized_sample_volatility_percent']:.2f}% | {', '.join(p['failed_rules']) or 'Pass under model assumptions'} |")

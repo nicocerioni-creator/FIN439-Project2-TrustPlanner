@@ -10,7 +10,7 @@ An interactive trust-planning app with a **Python/FastAPI backend** and a Next.j
 
 You need an internet connection for the first setup. The main calculations use the included market snapshot; the optional published-CPI lookup also needs internet.
 
-1. **Install the prerequisites.** Install [Python](https://www.python.org/downloads/) and [Node.js](https://nodejs.org/en/download). Python 3.11 and Node.js 24 are the tested versions. Node.js must be at least20.9; Python must be at least3.11. If using Windows, enable **Add Python to PATH** in the installer. VS Code is recommended but optional.
+1. **Install the prerequisites.** Install [Python](https://www.python.org/downloads/) and [Node.js](https://nodejs.org/en/download). Python 3.11 and Node.js 24 are the tested versions. Node.js must be at least 20.9; Python must be at least 3.11. If using Windows, enable **Add Python to PATH** in the installer. VS Code is recommended but optional.
 2. **Download the project.** On [this repository](https://github.com/nicocerioni-creator/FIN439-Project2-TrustPlanner), click the green **Code** button → **Download ZIP**. Unzip it. Open the extracted `FIN439-Project2-TrustPlanner-main` folder in VS Code using **File → Open Folder**. You should see `setup_web.py`, `run_web.py`, `backend` and `frontend` directly inside that folder.
 3. **Open a terminal in that folder.** In VS Code choose **Terminal → New Terminal**. You do not need to activate a virtual environment manually.
 4. **Install the app’s dependencies once.** On Mac/Linux, paste this command and press Enter:
@@ -22,7 +22,7 @@ You need an internet connection for the first setup. The main calculations use t
    On Windows use:
 
    ```powershell
-   py -3.11 setup_web.py
+   py setup_web.py
    ```
 
    Wait for **Installed. Start the app with…**. This creates a separate `.venv-web` environment and installs the pinned dependencies. It does not change your system Python packages.
@@ -35,7 +35,7 @@ You need an internet connection for the first setup. The main calculations use t
    On Windows run:
 
    ```powershell
-   py -3.11 run_web.py
+   py run_web.py
    ```
 
 6. **Open the website.** Go to **http://127.0.0.1:3000** in your browser. Leave the terminal open while using the app. The Python API documentation is at http://127.0.0.1:8000/docs.
@@ -45,7 +45,7 @@ You need an internet connection for the first setup. The main calculations use t
 
 | Message or symptom | What to do |
 |---|---|
-| `python3` not found | Install Python, reopen your terminal, then retry. On Windows use the `py -3.11` commands above. |
+| `python3` not found | Install Python, reopen your terminal, then retry. On Windows use the `py` commands above. |
 | `npm` or `node` not found | Install Node.js, reopen the terminal, then retry step4. |
 | `setup_web.py` cannot be found | Open the extracted project folder, not its parent. `setup_web.py` must be visible in that folder. |
 | Port3000 or8000 is in use | Stop the earlier app with Control+C. Or run `python3 run_web.py --ui-port 3001 --api-port 8001` and open http://127.0.0.1:3001. |
@@ -70,7 +70,7 @@ After setup, from the project folder run:
 python3 reproduce_submission.py
 ```
 
-On Windows use `py -3.11 reproduce_submission.py`. The script switches to `.venv-web` automatically. It reads the exact reference settings and writes `outputs/analysis.json`, `outputs/college-calendar.json` and `docs/visible-output.md`. The designated experiment has a separate guarded command and requires the verified pre-run prediction commit; it is never silently substituted for this reference run.
+On Windows use `py reproduce_submission.py`. The script switches to `.venv-web` automatically. It reads the exact reference settings and writes `outputs/analysis.json`, `outputs/college-calendar.json` and `docs/visible-output.md`. The designated experiment has a separate guarded command and requires the verified pre-run prediction commit; it is never silently substituted for this reference run.
 
 - [Decision memo](docs/decision-memo.md)
 - [Validation, AI use and Locked Changed-Input Record](docs/validation-and-ai-use.md)
@@ -78,7 +78,7 @@ On Windows use `py -3.11 reproduce_submission.py`. The script switches to `.venv
 - [Submission manifest and video links](docs/submission-manifest.md)
 - [Student’s unedited prediction](docs/ai-off-prediction.txt)
 
-Submission records are being frozen. The manifest distinguishes verified artifacts from items still awaiting recording or upload. An honest reject or research-only decision is valid; a completed model path is not proof that a committee should invest real money.
+The reference results, completed locked experiment and written reports are published. The manifest identifies video recording, caption/access verification and Brightspace submission as remaining steps. An honest reject or research-only decision is valid; a completed model path is not proof that a committee should invest real money.
 
 ## What the model does
 
@@ -90,7 +90,7 @@ Submission records are being frozen. The manifest distinguishes verified artifac
 - Shows standard/custom allocation weights and historical risk/return previews; Monte Carlo is an explicit investment-only bootstrap, not a solvency probability.
 - Tests losses, inflation, lower returns/costs, longevity, estimation windows, opening trading costs and tighter constraints. No trade executes.
 
-The original labs are preserved in the [older labs repository](https://github.com/nicocerioni-creator/FIN439-Apps-Project-2-Educational-ONLY-). This repository contains the final app and Project2 submission materials. The retained Streamlit files are a historical fallback; the installation steps above launch the current Python-backed web app.
+The original labs are preserved in the [older labs repository](https://github.com/nicocerioni-creator/FIN439-Apps-Project-2-Educational-ONLY-). This repository contains the app and Project 2 submission materials. The retained Streamlit files are a historical fallback; the installation steps above launch the current Python-backed web app.
 
 ## Technical checks
 

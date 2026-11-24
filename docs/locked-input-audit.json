@@ -1,0 +1,10 @@
+{
+  "prediction_commit": "81479f8587d1f0492504fdabe6ad245a514e63aa",
+  "immutable_commit_url": "https://github.com/nicocerioni-creator/FIN439-Project2-TrustPlanner/commit/81479f8587d1f0492504fdabe6ad245a514e63aa",
+  "prediction_publication_verified": true,
+  "verification_method": "Unauthenticated GitHub commit API and immutable raw-file bytes match the local prediction and reference inputs.",
+  "commit_time_utc": "2026-11-24T01:33:53Z",
+  "publication_verified_at_utc": "2026-11-24T01:34:35.511005+00:00",
+  "prediction_sha256": "08ce70d6a1ec0fb284404d8623242cfac6c5db51009d68f02d382304d2a1cf76",
+  "reference_plan_sha256": "7b311e01c80299bb72dcab58fb2ac46845aa129d6905d49211baa0d0d35c098f"
+}

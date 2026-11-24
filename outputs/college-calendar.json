@@ -1,0 +1,338 @@
+{
+  "model_start_date": "2026-11-23",
+  "annual_inflation_percent": "2",
+  "total_nominal_dollars": "1087852.76",
+  "children": [
+    {
+      "child_id": 1,
+      "total_nominal_dollars": "256025.93"
+    },
+    {
+      "child_id": 2,
+      "total_nominal_dollars": "266369.38"
+    },
+    {
+      "child_id": 3,
+      "total_nominal_dollars": "277130.69"
+    },
+    {
+      "child_id": 4,
+      "total_nominal_dollars": "288326.76"
+    }
+  ],
+  "payment_dates": [
+    {
+      "date": "2037-08-01",
+      "total_nominal_dollars": "30930.85",
+      "payments": [
+        {
+          "child_id": 1,
+          "semester": 1,
+          "term": "fall",
+          "amount_nominal_dollars": "30930.85"
+        }
+      ]
+    },
+    {
+      "date": "2038-01-01",
+      "total_nominal_dollars": "31187.12",
+      "payments": [
+        {
+          "child_id": 1,
+          "semester": 2,
+          "term": "spring",
+          "amount_nominal_dollars": "31187.12"
+        }
+      ]
+    },
+    {
+      "date": "2038-08-01",
+      "total_nominal_dollars": "31549.47",
+      "payments": [
+        {
+          "child_id": 1,
+          "semester": 3,
+          "term": "fall",
+          "amount_nominal_dollars": "31549.47"
+        }
+      ]
+    },
+    {
+      "date": "2039-01-01",
+      "total_nominal_dollars": "31810.86",
+      "payments": [
+        {
+          "child_id": 1,
+          "semester": 4,
+          "term": "spring",
+          "amount_nominal_dollars": "31810.86"
+        }
+      ]
+    },
+    {
+      "date": "2039-08-01",
+      "total_nominal_dollars": "64360.92",
+      "payments": [
+        {
+          "child_id": 1,
+          "semester": 5,
+          "term": "fall",
+          "amount_nominal_dollars": "32180.46"
+        },
+        {
+          "child_id": 2,
+          "semester": 1,
+          "term": "fall",
+          "amount_nominal_dollars": "32180.46"
+        }
+      ]
+    },
+    {
+      "date": "2040-01-01",
+      "total_nominal_dollars": "64894.16",
+      "payments": [
+        {
+          "child_id": 1,
+          "semester": 6,
+          "term": "spring",
+          "amount_nominal_dollars": "32447.08"
+        },
+        {
+          "child_id": 2,
+          "semester": 2,
+          "term": "spring",
+          "amount_nominal_dollars": "32447.08"
+        }
+      ]
+    },
+    {
+      "date": "2040-08-01",
+      "total_nominal_dollars": "65648.14",
+      "payments": [
+        {
+          "child_id": 1,
+          "semester": 7,
+          "term": "fall",
+          "amount_nominal_dollars": "32824.07"
+        },
+        {
+          "child_id": 2,
+          "semester": 3,
+          "term": "fall",
+          "amount_nominal_dollars": "32824.07"
+        }
+      ]
+    },
+    {
+      "date": "2041-01-01",
+      "total_nominal_dollars": "66192.04",
+      "payments": [
+        {
+          "child_id": 1,
+          "semester": 8,
+          "term": "spring",
+          "amount_nominal_dollars": "33096.02"
+        },
+        {
+          "child_id": 2,
+          "semester": 4,
+          "term": "spring",
+          "amount_nominal_dollars": "33096.02"
+        }
+      ]
+    },
+    {
+      "date": "2041-08-01",
+      "total_nominal_dollars": "66961.10",
+      "payments": [
+        {
+          "child_id": 2,
+          "semester": 5,
+          "term": "fall",
+          "amount_nominal_dollars": "33480.55"
+        },
+        {
+          "child_id": 3,
+          "semester": 1,
+          "term": "fall",
+          "amount_nominal_dollars": "33480.55"
+        }
+      ]
+    },
+    {
+      "date": "2042-01-01",
+      "total_nominal_dollars": "67515.88",
+      "payments": [
+        {
+          "child_id": 2,
+          "semester": 6,
+          "term": "spring",
+          "amount_nominal_dollars": "33757.94"
+        },
+        {
+          "child_id": 3,
+          "semester": 2,
+          "term": "spring",
+          "amount_nominal_dollars": "33757.94"
+        }
+      ]
+    },
+    {
+      "date": "2042-08-01",
+      "total_nominal_dollars": "68300.32",
+      "payments": [
+        {
+          "child_id": 2,
+          "semester": 7,
+          "term": "fall",
+          "amount_nominal_dollars": "34150.16"
+        },
+        {
+          "child_id": 3,
+          "semester": 3,
+          "term": "fall",
+          "amount_nominal_dollars": "34150.16"
+        }
+      ]
+    },
+    {
+      "date": "2043-01-01",
+      "total_nominal_dollars": "68866.20",
+      "payments": [
+        {
+          "child_id": 2,
+          "semester": 8,
+          "term": "spring",
+          "amount_nominal_dollars": "34433.10"
+        },
+        {
+          "child_id": 3,
+          "semester": 4,
+          "term": "spring",
+          "amount_nominal_dollars": "34433.10"
+        }
+      ]
+    },
+    {
+      "date": "2043-08-01",
+      "total_nominal_dollars": "69666.32",
+      "payments": [
+        {
+          "child_id": 3,
+          "semester": 5,
+          "term": "fall",
+          "amount_nominal_dollars": "34833.16"
+        },
+        {
+          "child_id": 4,
+          "semester": 1,
+          "term": "fall",
+          "amount_nominal_dollars": "34833.16"
+        }
+      ]
+    },
+    {
+      "date": "2044-01-01",
+      "total_nominal_dollars": "70243.52",
+      "payments": [
+        {
+          "child_id": 3,
+          "semester": 6,
+          "term": "spring",
+          "amount_nominal_dollars": "35121.76"
+        },
+        {
+          "child_id": 4,
+          "semester": 2,
+          "term": "spring",
+          "amount_nominal_dollars": "35121.76"
+        }
+      ]
+    },
+    {
+      "date": "2044-08-01",
+      "total_nominal_dollars": "71059.64",
+      "payments": [
+        {
+          "child_id": 3,
+          "semester": 7,
+          "term": "fall",
+          "amount_nominal_dollars": "35529.82"
+        },
+        {
+          "child_id": 4,
+          "semester": 3,
+          "term": "fall",
+          "amount_nominal_dollars": "35529.82"
+        }
+      ]
+    },
+    {
+      "date": "2045-01-01",
+      "total_nominal_dollars": "71648.40",
+      "payments": [
+        {
+          "child_id": 3,
+          "semester": 8,
+          "term": "spring",
+          "amount_nominal_dollars": "35824.20"
+        },
+        {
+          "child_id": 4,
+          "semester": 4,
+          "term": "spring",
+          "amount_nominal_dollars": "35824.20"
+        }
+      ]
+    },
+    {
+      "date": "2045-08-01",
+      "total_nominal_dollars": "36240.42",
+      "payments": [
+        {
+          "child_id": 4,
+          "semester": 5,
+          "term": "fall",
+          "amount_nominal_dollars": "36240.42"
+        }
+      ]
+    },
+    {
+      "date": "2046-01-01",
+      "total_nominal_dollars": "36540.68",
+      "payments": [
+        {
+          "child_id": 4,
+          "semester": 6,
+          "term": "spring",
+          "amount_nominal_dollars": "36540.68"
+        }
+      ]
+    },
+    {
+      "date": "2046-08-01",
+      "total_nominal_dollars": "36965.23",
+      "payments": [
+        {
+          "child_id": 4,
+          "semester": 7,
+          "term": "fall",
+          "amount_nominal_dollars": "36965.23"
+        }
+      ]
+    },
+    {
+      "date": "2047-01-01",
+      "total_nominal_dollars": "37271.49",
+      "payments": [
+        {
+          "child_id": 4,
+          "semester": 8,
+          "term": "spring",
+          "amount_nominal_dollars": "37271.49"
+        }
+      ]
+    }
+  ],
+  "convention": "Nominal scheduled allowances, not proof of payment or funding. Monthly first-day inflation steps after model start, per-child semester amounts rounded to cents, including obligations beyond the funding horizon."
+}

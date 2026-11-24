@@ -1,0 +1,89 @@
+{
+  "parameter": "funding.annual_cpi_change_percent",
+  "unit": "percent per year",
+  "old": "2",
+  "new": "4",
+  "prediction_commit": "81479f8587d1f0492504fdabe6ad245a514e63aa",
+  "prediction_sha256": "08ce70d6a1ec0fb284404d8623242cfac6c5db51009d68f02d382304d2a1cf76",
+  "reference_plan_sha256": "7b311e01c80299bb72dcab58fb2ac46845aa129d6905d49211baa0d0d35c098f",
+  "run_started_utc": "2026-11-24T01:35:30.301580+00:00",
+  "run_completed_utc": "2026-11-24T01:35:36.201097+00:00",
+  "baseline_result_sha256": "2cfd47c45fbb3d1a94dd97f168c832b9855cd8ef6422724b83196bc0429e89c0",
+  "changed_result_sha256": "dae03287c6228b738a60e3ebb34f99c88ccda482ef326703a16e77f8571b9119",
+  "baseline_decision": "Adopt the research monitoring process; authorize0% live allocation",
+  "changed_decision": "Adopt the research monitoring process; authorize0% live allocation",
+  "baseline_weights": {
+    "VOO": 0.0,
+    "QQQ": 20.0,
+    "SCHD": 0.0,
+    "PAVE": 0.0,
+    "XLE": 10.0,
+    "XLV": 0.0,
+    "SGOV": 70.0
+  },
+  "changed_weights": {
+    "VOO": 0.0,
+    "QQQ": 20.0,
+    "SCHD": 0.0,
+    "PAVE": 0.0,
+    "XLE": 10.0,
+    "XLV": 0.0,
+    "SGOV": 70.0
+  },
+  "baseline_returns": {
+    "college_scenario_return_percent": 4.531203182938572,
+    "support_scenario_return_percent": 10.851858707506782
+  },
+  "changed_returns": {
+    "college_scenario_return_percent": 4.531203182938572,
+    "support_scenario_return_percent": 10.851858707506782
+  },
+  "changed_nominal_college_total": "1474000.59",
+  "baseline_nominal_college_total": "1087852.76",
+  "baseline_paths": {
+    "minimum": {
+      "status": "completed_horizon",
+      "last_date": "2104-11-23",
+      "ending_total": "28250081408.50",
+      "ending_total_model_start_dollars": "6028458925.73",
+      "first_payment_shortfall": null
+    },
+    "goal": {
+      "status": "completed_horizon",
+      "last_date": "2104-11-23",
+      "ending_total": "21985019838.05",
+      "ending_total_model_start_dollars": "4691518837.01",
+      "first_payment_shortfall": null
+    },
+    "adaptive": {
+      "status": "completed_horizon",
+      "last_date": "2104-11-23",
+      "ending_total": "22207221402.02",
+      "ending_total_model_start_dollars": "4738935797.77",
+      "first_payment_shortfall": null
+    }
+  },
+  "changed_paths": {
+    "minimum": {
+      "status": "completed_horizon",
+      "last_date": "2104-11-23",
+      "ending_total": "27296016699.79",
+      "ending_total_model_start_dollars": "1280851584.56",
+      "first_payment_shortfall": null
+    },
+    "goal": {
+      "status": "completed_horizon",
+      "last_date": "2104-11-23",
+      "ending_total": "16055905603.97",
+      "ending_total_model_start_dollars": "753415136.01",
+      "first_payment_shortfall": null
+    },
+    "adaptive": {
+      "status": "completed_horizon",
+      "last_date": "2104-11-23",
+      "ending_total": "17474144094.13",
+      "ending_total_model_start_dollars": "819965249.80",
+      "first_payment_shortfall": null
+    }
+  }
+}

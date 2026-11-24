@@ -1,0 +1,20 @@
+{
+  "platform": "macOS ARM64",
+  "python": "3.11.7",
+  "node": "24.19.0",
+  "source_commit": "81479f8587d1f0492504fdabe6ad245a514e63aa",
+  "fresh_clone": true,
+  "fresh_python_environment": true,
+  "fresh_npm_ci": true,
+  "download_caches_reused": true,
+  "setup": "PASS",
+  "first_setup_failure": null,
+  "ui": "HTTP200 on3101",
+  "api": "API4.4.0 on8101",
+  "full_reference_through_next_proxy": "Exact JSON equality with frozen reference result",
+  "limits": [
+    "Only macOS ARM64 tested; no Windows/Linux execution claim.",
+    "Initial Python/Node prerequisites were already present.",
+    "Optional published-CPI network lookup is separate from the offline reference calculation."
+  ]
+}

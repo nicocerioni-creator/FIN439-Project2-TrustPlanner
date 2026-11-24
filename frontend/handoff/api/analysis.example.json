@@ -1,5 +1,5 @@
 {
-  "api_version": "4.3.0",
+  "api_version": "4.4.0",
   "inputs": {
     "funding": {
       "payment_inputs": {
@@ -78,7 +78,12 @@
       "inflation_increase_points": "2",
       "return_reduction_points": "3",
       "cost_increase_points": "0.5",
-      "longevity_extension_years": 10
+      "longevity_extension_years": 10,
+      "short_window_months": 12,
+      "long_window_months": 60,
+      "trade_cost_increase_bps": "25",
+      "tighter_volatility_percent": "10",
+      "tighter_fund_cap_percent": "60"
     },
     "use_historical_proxy_returns": false
   },
@@ -2211,11 +2216,383 @@
       }
     }
   ],
+  "portfolio_sensitivities": [
+    {
+      "name": "Shorter estimation window",
+      "changed_parameters": {
+        "estimation_months": 12
+      },
+      "status": "portfolio_estimates_only",
+      "data_card": {
+        "source": "User-uploaded adjusted-price panel",
+        "sha256": "561037576b9da65ded0a5b5e673fa340b4ebbe070fcd46c4f60ea815ad9b7dce",
+        "snapshot_available_on": "2026-10-22",
+        "first_price_date": "2024-09-28",
+        "last_price_date": "2026-09-28",
+        "decision_date": "2026-11-23",
+        "units": "USD adjusted price; derived returns are decimals/percent, not CPI.",
+        "rows": 25,
+        "source_provenance": "User asserted; not independently verified",
+        "availability_rule": "Entire frozen snapshot must predate decision day; closing observations must also predate it. No backdated use of later adjusted history.",
+        "revision_limit": "This is one forward-decision snapshot, not evidence of vintage-safe historical backtesting.",
+        "signal": "12-month VOO adjusted-price total-return proxy; if nonpositive, restrict equity weight to the entered risk-off cap. An unvalidated research hypothesis.",
+        "data_age_days": 56,
+        "admission": "admit_for_this_forward_decision",
+        "reasons": [],
+        "estimation_months": 12,
+        "estimation_first_return_date": "2025-10-28",
+        "signal_start_price_date": "2025-09-28",
+        "signal_end_price_date": "2026-09-28",
+        "signal_12_month_return_percent": 11.470904902036839,
+        "signal_regime": "risk_on"
+      },
+      "candidate": {
+        "name": "Constrained candidate",
+        "weights": {
+          "VOO": 20.0,
+          "QQQ": 0.0,
+          "SCHD": 20.0,
+          "PAVE": 20.0,
+          "XLE": 0.0,
+          "XLV": 20.0,
+          "SGOV": 20.0
+        },
+        "historical_arithmetic_return_percent": 10.311453758319518,
+        "historical_constant_mix_cagr_percent": 10.813004818835562,
+        "annualized_sample_volatility_percent": 0.042261659234797654,
+        "one_way_transition_turnover_percent": 80.0,
+        "turnover_charged_percent": 0,
+        "annual_turnover_total_percent": 0.0,
+        "proposed_transaction_cost": 0.0,
+        "reserve_proxy_assets": 48.0,
+        "hard_checks": {
+          "long_only_sum_100": true,
+          "volatility": true,
+          "annual_turnover_budget": true,
+          "college_reserve_proxy_coverage": true,
+          "point_in_time_equity_cap": true,
+          "maximum_fund_weight": true
+        },
+        "hard_checks_pass": true,
+        "failed_rules": [],
+        "return_objective_met": true,
+        "equity_cap_percent": 100,
+        "historical_sharpe_proxy": 187.15445345787015,
+        "historical_max_drawdown_percent": 0,
+        "allocation_style": "target_return",
+        "allocation_label": "Target return (legacy)",
+        "college_model_assets": 0.0,
+        "support_model_assets": 240.0,
+        "college_weights": {
+          "VOO": 0,
+          "QQQ": 0,
+          "SCHD": 0,
+          "PAVE": 0,
+          "XLE": 0,
+          "XLV": 0,
+          "SGOV": 100
+        },
+        "support_weights": {
+          "VOO": 20.0,
+          "QQQ": 0.0,
+          "SCHD": 20.0,
+          "PAVE": 20.0,
+          "XLE": 0.0,
+          "XLV": 20.0,
+          "SGOV": 20.0
+        },
+        "college_scenario_return_percent": 2.428614006037735,
+        "support_scenario_return_percent": 10.813004818835562
+      },
+      "maximum_weight_change_points": 0.0,
+      "reason": null
+    },
+    {
+      "name": "Longer estimation window",
+      "changed_parameters": {
+        "estimation_months": 60
+      },
+      "status": "invalid_scenario",
+      "candidate": null,
+      "maximum_weight_change_points": null,
+      "reason": "The selected estimation window needs at least that many returns plus one price row."
+    },
+    {
+      "name": "Higher opening trading costs",
+      "changed_parameters": {
+        "transaction_cost_bps": "25.0"
+      },
+      "status": "portfolio_estimates_only",
+      "data_card": {
+        "source": "User-uploaded adjusted-price panel",
+        "sha256": "561037576b9da65ded0a5b5e673fa340b4ebbe070fcd46c4f60ea815ad9b7dce",
+        "snapshot_available_on": "2026-10-22",
+        "first_price_date": "2024-09-28",
+        "last_price_date": "2026-09-28",
+        "decision_date": "2026-11-23",
+        "units": "USD adjusted price; derived returns are decimals/percent, not CPI.",
+        "rows": 25,
+        "source_provenance": "User asserted; not independently verified",
+        "availability_rule": "Entire frozen snapshot must predate decision day; closing observations must also predate it. No backdated use of later adjusted history.",
+        "revision_limit": "This is one forward-decision snapshot, not evidence of vintage-safe historical backtesting.",
+        "signal": "12-month VOO adjusted-price total-return proxy; if nonpositive, restrict equity weight to the entered risk-off cap. An unvalidated research hypothesis.",
+        "data_age_days": 56,
+        "admission": "admit_for_this_forward_decision",
+        "reasons": [],
+        "estimation_months": 12,
+        "estimation_first_return_date": "2025-10-28",
+        "signal_start_price_date": "2025-09-28",
+        "signal_end_price_date": "2026-09-28",
+        "signal_12_month_return_percent": 11.470904902036839,
+        "signal_regime": "risk_on"
+      },
+      "candidate": {
+        "name": "Constrained candidate",
+        "weights": {
+          "VOO": 20.0,
+          "QQQ": 0.0,
+          "SCHD": 20.0,
+          "PAVE": 20.0,
+          "XLE": 0.0,
+          "XLV": 20.0,
+          "SGOV": 20.0
+        },
+        "historical_arithmetic_return_percent": 10.311453758319518,
+        "historical_constant_mix_cagr_percent": 10.813004818835562,
+        "annualized_sample_volatility_percent": 0.042261659234797654,
+        "one_way_transition_turnover_percent": 80.0,
+        "turnover_charged_percent": 0,
+        "annual_turnover_total_percent": 0.0,
+        "proposed_transaction_cost": 0.6,
+        "reserve_proxy_assets": 47.88,
+        "hard_checks": {
+          "long_only_sum_100": true,
+          "volatility": true,
+          "annual_turnover_budget": true,
+          "college_reserve_proxy_coverage": true,
+          "point_in_time_equity_cap": true,
+          "maximum_fund_weight": true
+        },
+        "hard_checks_pass": true,
+        "failed_rules": [],
+        "return_objective_met": true,
+        "equity_cap_percent": 100,
+        "historical_sharpe_proxy": 187.15445345787015,
+        "historical_max_drawdown_percent": 0,
+        "allocation_style": "target_return",
+        "allocation_label": "Target return (legacy)",
+        "college_model_assets": 0.0,
+        "support_model_assets": 239.4,
+        "college_weights": {
+          "VOO": 0,
+          "QQQ": 0,
+          "SCHD": 0,
+          "PAVE": 0,
+          "XLE": 0,
+          "XLV": 0,
+          "SGOV": 100
+        },
+        "support_weights": {
+          "VOO": 20.0,
+          "QQQ": 0.0,
+          "SCHD": 20.0,
+          "PAVE": 20.0,
+          "XLE": 0.0,
+          "XLV": 20.0,
+          "SGOV": 20.0
+        },
+        "college_scenario_return_percent": 2.428614006037735,
+        "support_scenario_return_percent": 10.813004818835562
+      },
+      "maximum_weight_change_points": 0.0,
+      "reason": null
+    },
+    {
+      "name": "Tighter volatility constraint",
+      "changed_parameters": {
+        "volatility_limit_percent": "10.0"
+      },
+      "status": "portfolio_estimates_only",
+      "data_card": {
+        "source": "User-uploaded adjusted-price panel",
+        "sha256": "561037576b9da65ded0a5b5e673fa340b4ebbe070fcd46c4f60ea815ad9b7dce",
+        "snapshot_available_on": "2026-10-22",
+        "first_price_date": "2024-09-28",
+        "last_price_date": "2026-09-28",
+        "decision_date": "2026-11-23",
+        "units": "USD adjusted price; derived returns are decimals/percent, not CPI.",
+        "rows": 25,
+        "source_provenance": "User asserted; not independently verified",
+        "availability_rule": "Entire frozen snapshot must predate decision day; closing observations must also predate it. No backdated use of later adjusted history.",
+        "revision_limit": "This is one forward-decision snapshot, not evidence of vintage-safe historical backtesting.",
+        "signal": "12-month VOO adjusted-price total-return proxy; if nonpositive, restrict equity weight to the entered risk-off cap. An unvalidated research hypothesis.",
+        "data_age_days": 56,
+        "admission": "admit_for_this_forward_decision",
+        "reasons": [],
+        "estimation_months": 12,
+        "estimation_first_return_date": "2025-10-28",
+        "signal_start_price_date": "2025-09-28",
+        "signal_end_price_date": "2026-09-28",
+        "signal_12_month_return_percent": 11.470904902036839,
+        "signal_regime": "risk_on"
+      },
+      "candidate": {
+        "name": "Constrained candidate",
+        "weights": {
+          "VOO": 20.0,
+          "QQQ": 0.0,
+          "SCHD": 20.0,
+          "PAVE": 20.0,
+          "XLE": 0.0,
+          "XLV": 20.0,
+          "SGOV": 20.0
+        },
+        "historical_arithmetic_return_percent": 10.311453758319518,
+        "historical_constant_mix_cagr_percent": 10.813004818835562,
+        "annualized_sample_volatility_percent": 0.042261659234797654,
+        "one_way_transition_turnover_percent": 80.0,
+        "turnover_charged_percent": 0,
+        "annual_turnover_total_percent": 0.0,
+        "proposed_transaction_cost": 0.0,
+        "reserve_proxy_assets": 48.0,
+        "hard_checks": {
+          "long_only_sum_100": true,
+          "volatility": true,
+          "annual_turnover_budget": true,
+          "college_reserve_proxy_coverage": true,
+          "point_in_time_equity_cap": true,
+          "maximum_fund_weight": true
+        },
+        "hard_checks_pass": true,
+        "failed_rules": [],
+        "return_objective_met": true,
+        "equity_cap_percent": 100,
+        "historical_sharpe_proxy": 187.15445345787015,
+        "historical_max_drawdown_percent": 0,
+        "allocation_style": "target_return",
+        "allocation_label": "Target return (legacy)",
+        "college_model_assets": 0.0,
+        "support_model_assets": 240.0,
+        "college_weights": {
+          "VOO": 0,
+          "QQQ": 0,
+          "SCHD": 0,
+          "PAVE": 0,
+          "XLE": 0,
+          "XLV": 0,
+          "SGOV": 100
+        },
+        "support_weights": {
+          "VOO": 20.0,
+          "QQQ": 0.0,
+          "SCHD": 20.0,
+          "PAVE": 20.0,
+          "XLE": 0.0,
+          "XLV": 20.0,
+          "SGOV": 20.0
+        },
+        "college_scenario_return_percent": 2.428614006037735,
+        "support_scenario_return_percent": 10.813004818835562
+      },
+      "maximum_weight_change_points": 0.0,
+      "reason": null
+    },
+    {
+      "name": "Tighter whole-trust single-fund cap",
+      "changed_parameters": {
+        "max_fund_weight_percent": "60.0"
+      },
+      "status": "portfolio_estimates_only",
+      "data_card": {
+        "source": "User-uploaded adjusted-price panel",
+        "sha256": "561037576b9da65ded0a5b5e673fa340b4ebbe070fcd46c4f60ea815ad9b7dce",
+        "snapshot_available_on": "2026-10-22",
+        "first_price_date": "2024-09-28",
+        "last_price_date": "2026-09-28",
+        "decision_date": "2026-11-23",
+        "units": "USD adjusted price; derived returns are decimals/percent, not CPI.",
+        "rows": 25,
+        "source_provenance": "User asserted; not independently verified",
+        "availability_rule": "Entire frozen snapshot must predate decision day; closing observations must also predate it. No backdated use of later adjusted history.",
+        "revision_limit": "This is one forward-decision snapshot, not evidence of vintage-safe historical backtesting.",
+        "signal": "12-month VOO adjusted-price total-return proxy; if nonpositive, restrict equity weight to the entered risk-off cap. An unvalidated research hypothesis.",
+        "data_age_days": 56,
+        "admission": "admit_for_this_forward_decision",
+        "reasons": [],
+        "estimation_months": 12,
+        "estimation_first_return_date": "2025-10-28",
+        "signal_start_price_date": "2025-09-28",
+        "signal_end_price_date": "2026-09-28",
+        "signal_12_month_return_percent": 11.470904902036839,
+        "signal_regime": "risk_on"
+      },
+      "candidate": {
+        "name": "Constrained candidate",
+        "weights": {
+          "VOO": 20.0,
+          "QQQ": 0.0,
+          "SCHD": 20.0,
+          "PAVE": 20.0,
+          "XLE": 0.0,
+          "XLV": 20.0,
+          "SGOV": 20.0
+        },
+        "historical_arithmetic_return_percent": 10.311453758319518,
+        "historical_constant_mix_cagr_percent": 10.813004818835562,
+        "annualized_sample_volatility_percent": 0.042261659234797654,
+        "one_way_transition_turnover_percent": 80.0,
+        "turnover_charged_percent": 0,
+        "annual_turnover_total_percent": 0.0,
+        "proposed_transaction_cost": 0.0,
+        "reserve_proxy_assets": 48.0,
+        "hard_checks": {
+          "long_only_sum_100": true,
+          "volatility": true,
+          "annual_turnover_budget": true,
+          "college_reserve_proxy_coverage": true,
+          "point_in_time_equity_cap": true,
+          "maximum_fund_weight": true
+        },
+        "hard_checks_pass": true,
+        "failed_rules": [],
+        "return_objective_met": true,
+        "equity_cap_percent": 100,
+        "historical_sharpe_proxy": 187.15445345787015,
+        "historical_max_drawdown_percent": 0,
+        "allocation_style": "target_return",
+        "allocation_label": "Target return (legacy)",
+        "college_model_assets": 0.0,
+        "support_model_assets": 240.0,
+        "college_weights": {
+          "VOO": 0,
+          "QQQ": 0,
+          "SCHD": 0,
+          "PAVE": 0,
+          "XLE": 0,
+          "XLV": 0,
+          "SGOV": 100
+        },
+        "support_weights": {
+          "VOO": 20.0,
+          "QQQ": 0.0,
+          "SCHD": 20.0,
+          "PAVE": 20.0,
+          "XLE": 0.0,
+          "XLV": 20.0,
+          "SGOV": 20.0
+        },
+        "college_scenario_return_percent": 2.428614006037735,
+        "support_scenario_return_percent": 10.813004818835562
+      },
+      "maximum_weight_change_points": 0.0,
+      "reason": null
+    }
+  ],
   "recommendation": {
-    "action": "Review a conditional pilot; no automatic adoption",
+    "action": "Reject live allocation pending a complete valid robustness review",
     "allocation_range_percent_of_support_capital": [
       0,
-      0.0
+      0
     ],
     "proposed_weights": {
       "VOO": 20.0,
@@ -2227,16 +2604,14 @@
       "SGOV": 20.0
     },
     "conditions": [
-      "The selected cash-flow path completed under assumptions; this is not proof of future solvency.",
-      "Adverse minimum-support failures remain.",
-      "The pilot ceiling is a user-entered proposal, not an evaluated blend with other holdings. The return target is met by the historical estimate only."
+      "Required robustness evidence is disabled, unavailable or invalid. Retain0% live allocation until the checks are completed."
     ],
     "reversal_triggers": [
       "Any college reserve backing gap or hard minimum missed payment.",
       "Updated volatility exceeds limit, annual turnover budget exhausted, or data is quarantined/stale.",
       "New information changes the investment thesis, costs or funding assumptions."
     ],
-    "committee_ask": "Review candidate weights, reserve backing, draft support rule and adverse failures. Approve a limited pilot only after these assumptions are accepted; otherwise reject/revise.",
+    "committee_ask": "Reject live allocation and require correction of the failed checks before review.",
     "student_review_required": true
   },
   "limitations": [

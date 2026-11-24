@@ -1,0 +1,737 @@
+{
+  "scope": "Reviewed app/reference results and written materials before video evidence; not a completed Brightspace submission.",
+  "generated_utc": "2026-11-24T01:53:13.977554+00:00",
+  "prediction_commit": "81479f8587d1f0492504fdabe6ad245a514e63aa",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "56bffbb7e0eb9d645589c9628fd937a459b0009ccbb5e5ea4a7c871960cd22c8",
+      "bytes": 951
+    },
+    {
+      "path": ".vscode/tasks.json",
+      "sha256": "a1cac6350371711920c7c9bb2985a0a5647deef05807d0144770b0b4458de528",
+      "bytes": 671
+    },
+    {
+      "path": "README.md",
+      "sha256": "1997fd8c9529b723ea7e03e903a1f423c8b2dbdd5fc77b504f3d2829d3b18a85",
+      "bytes": 7570
+    },
+    {
+      "path": "Trust Planner.code-workspace",
+      "sha256": "4426f1c4d59b4a11da52be11509f9e9b03f5b90d9cce16768edc1fdc7101faee",
+      "bytes": 406
+    },
+    {
+      "path": "academic_calendar.py",
+      "sha256": "d809aaa50dea926cccddce0c82ccf83db85164cb3a01a5e92176231a8ecfbb95",
+      "bytes": 4141
+    },
+    {
+      "path": "backend/__init__.py",
+      "sha256": "47fe5330aa61767870e7899ffdebd60eda761c48963869b2d6fb10db15f2709a",
+      "bytes": 61
+    },
+    {
+      "path": "backend/adaptive_support.py",
+      "sha256": "b1be5c56564cf6908b09e11ec73df6e7df56f2b7a5bcc12124cd07b47edf78ec",
+      "bytes": 3319
+    },
+    {
+      "path": "backend/college_plan.py",
+      "sha256": "f4a61406a1e131b0ba0f262c699a11cf7cc21066216e6e6d325e3ed972fb89dc",
+      "bytes": 1946
+    },
+    {
+      "path": "backend/college_reserve.py",
+      "sha256": "8823133d5d75d526a2c626731a6b0a8dbd1890350be87cc004036248525976a4",
+      "bytes": 5276
+    },
+    {
+      "path": "backend/cpi_data.py",
+      "sha256": "fbd757e0309bd33def7ad069288c20134ddca4834d0b34923d88d18ce4e89bf7",
+      "bytes": 4048
+    },
+    {
+      "path": "backend/funding_projection.py",
+      "sha256": "d452818111474c83e9085af51efc757c592155c222bb8630346d870339559ee5",
+      "bytes": 18000
+    },
+    {
+      "path": "backend/main.py",
+      "sha256": "605b6146f2d09eff46b26f723b8e7cebfa15ddc06fe7e1f7a63ca4ac6a819844",
+      "bytes": 28766
+    },
+    {
+      "path": "backend/portfolio_engine.py",
+      "sha256": "0a9980fa3dda71a9f0c284a2a929522aef0fd98593e63aee4e48aa70efcacedc",
+      "bytes": 15083
+    },
+    {
+      "path": "backend/portfolio_sensitivity.py",
+      "sha256": "dda0493d17c175bd95d5d847e77f27cf4e49a43e78562ac6496cd5164c230e74",
+      "bytes": 1800
+    },
+    {
+      "path": "backend/portfolio_simulation.py",
+      "sha256": "0beddbbe195a887e6f72794e6dbd8c735666b824e1c8ed0909c51bf4222b2755",
+      "bytes": 2879
+    },
+    {
+      "path": "backend/product_evaluation.py",
+      "sha256": "8e68bb6e9232dd7b6df495ca48c9d6e308a24a0b9e5da9d809ba5cbda1fa3be2",
+      "bytes": 11699
+    },
+    {
+      "path": "backend/requirements.lock.txt",
+      "sha256": "3caa3058ffe8f6cbc79c3a3156ce5683e55a409d4eac603e1529cdc480d1537d",
+      "bytes": 311
+    },
+    {
+      "path": "backend/requirements.txt",
+      "sha256": "b2a7cbdd10c40f6e6e51f1988d55c5b0f6143631a45c79b49ad6ccde30ff5cb7",
+      "bytes": 135
+    },
+    {
+      "path": "backend/tests/test_api.py",
+      "sha256": "4acd30130fbaab768b5c08d3ae0bcd3c6dc30c745bc3ffa848b80632a3502e3b",
+      "bytes": 6900
+    },
+    {
+      "path": "backend/tests/test_college_plan.py",
+      "sha256": "71b123e0472b9c0160cacf65d843c4ec0940e2acf5c29d722c0bf0db92648eed",
+      "bytes": 4848
+    },
+    {
+      "path": "backend/tests/test_evidence_policy.py",
+      "sha256": "4bb2cd72fa1827d297e1a94ce8293a6c3a83b0009818170f9708082e7a6058a2",
+      "bytes": 1348
+    },
+    {
+      "path": "backend/tests/test_funding.py",
+      "sha256": "fb9b0371de301a94ad5765dec6e9ae64071ad0a519a346b41dbbde0bbbd13e59",
+      "bytes": 8220
+    },
+    {
+      "path": "backend/tests/test_funding_workflow.py",
+      "sha256": "162a64e4089807804e6a0f14e145ae339422bac58f622e31cbdf42a7b6563284",
+      "bytes": 3712
+    },
+    {
+      "path": "backend/tests/test_portfolio_cases.py",
+      "sha256": "1f793a54f094e080b46c1d778306e13ae8e40118b5e4db591be8cfecc0006eb9",
+      "bytes": 5826
+    },
+    {
+      "path": "backend/tests/test_product.py",
+      "sha256": "773304a67da78cb5207b827ede28a4ecfc78b5d04f71de5d9ac8b0b47d185816",
+      "bytes": 9206
+    },
+    {
+      "path": "backend/tests/test_reserve.py",
+      "sha256": "65790666f48819adef84ef3f1875ca37137dba19d1e5245c5b44d799e16585cb",
+      "bytes": 7317
+    },
+    {
+      "path": "backend/tests/test_submission_review.py",
+      "sha256": "c00ec3e2833b7c8ff1fd9ca0f3512609fd1f4fca055615a44c476ceb5eff8bc4",
+      "bytes": 2538
+    },
+    {
+      "path": "data/market/manifest.json",
+      "sha256": "15b45701b3e9d179028d010120719a4d8eaeaf4d1570905726b313d7997ab12f",
+      "bytes": 2326
+    },
+    {
+      "path": "data/market/prices.csv",
+      "sha256": "fb4a6dfc9eb6d1688cd9d5584f2a796cad48032d41cb93d43d3d3fb5e26e1719",
+      "bytes": 8436
+    },
+    {
+      "path": "docs/V0-PROMPT.txt",
+      "sha256": "1c2d4f4059e63b1a5182b4f4abdb6ae8ca4017f0a88f0700d662703ad4facb97",
+      "bytes": 13066
+    },
+    {
+      "path": "docs/academic-calendar-validation.md",
+      "sha256": "2ce9d5d92bdc0aefec76588721b2c1ec481d2b1439029c2ef6e3a6b355649d2b",
+      "bytes": 3856
+    },
+    {
+      "path": "docs/ai-off-prediction.txt",
+      "sha256": "08ce70d6a1ec0fb284404d8623242cfac6c5db51009d68f02d382304d2a1cf76",
+      "bytes": 571
+    },
+    {
+      "path": "docs/api/analysis.example.json",
+      "sha256": "6e2b6758117c47c4fcb707c1212d3043271c1232ccebafe694810d8ff1711f10",
+      "bytes": 105808
+    },
+    {
+      "path": "docs/api/college-payment-plan.example.json",
+      "sha256": "ac587f5656eb9a4e9896a070fcaf5d3e3f5c1ec21829f47e5fdc815f547b7a2a",
+      "bytes": 1883
+    },
+    {
+      "path": "docs/api/college-reserve.example.json",
+      "sha256": "5c56ea0726e84b52203569b24ed2a204c3955eb8fe2cc00493a5dad652a4851a",
+      "bytes": 16209
+    },
+    {
+      "path": "docs/api/funding-projection.example.json",
+      "sha256": "a28d23a7208d567699f959757b9b509f01e822a79df17c50c858e498e17ffa5a",
+      "bytes": 42982
+    },
+    {
+      "path": "docs/api/openapi.json",
+      "sha256": "933d767c213f24984cf22f7e03bf923dd4abb395021e3483b930192c21bd7f30",
+      "bytes": 38393
+    },
+    {
+      "path": "docs/api/payment-schedule.example.json",
+      "sha256": "a772642107206d5ddbdb7cec61aae2226bd60afb90e3e5a2215c44d9e5295ce1",
+      "bytes": 13560
+    },
+    {
+      "path": "docs/api/portfolio-cases.example.json",
+      "sha256": "b7bfacce551ae1f05b03b1c896d39426ab65a698d7ce0f66f67e09252f4e0c1b",
+      "bytes": 56961
+    },
+    {
+      "path": "docs/api/portfolio-estimate.example.json",
+      "sha256": "68950408d3fa0f87d13a26acee824d6dfef6f60eb827bf7047ae54a91793112e",
+      "bytes": 16482
+    },
+    {
+      "path": "docs/api/portfolio-simulation.example.json",
+      "sha256": "b59255e4d94bf1154b10dc992f5ce4238bcf51aeb901fd8d4afbc2b422c09ff2",
+      "bytes": 8345
+    },
+    {
+      "path": "docs/api/reference-case.json",
+      "sha256": "28e1fdbb1802a9ecc42e56c86d3c4ef4cd2b206a9c6f58bee1dae7960dce94bf",
+      "bytes": 3506
+    },
+    {
+      "path": "docs/cold-start-check.json",
+      "sha256": "8c141b0d42055f261c9078aac091726bc6dc0a5763c9e57dd5631cf07a83d90f",
+      "bytes": 694
+    },
+    {
+      "path": "docs/cpi-reserve-validation.md",
+      "sha256": "4c93fda206453bf763b990b66a791f26de989d6254ec54d8fca67922cb4c890f",
+      "bytes": 5610
+    },
+    {
+      "path": "docs/decision-memo.md",
+      "sha256": "3fddbc330cd3c7f39af089a044b78e431c4ff16ccad7601885a0e1f2c7b0a1fe",
+      "bytes": 5013
+    },
+    {
+      "path": "docs/final-submission-checklist.md",
+      "sha256": "6b3031044b1b75330fba5556aeadf635120f4c36b394c8b92adb66ce67f84360",
+      "bytes": 4610
+    },
+    {
+      "path": "docs/frontend-handoff.md",
+      "sha256": "11449815b7288eb2164cc03477f7783789687b07298be88f2ba33909bfe4071d",
+      "bytes": 15140
+    },
+    {
+      "path": "docs/functional-review-guide.md",
+      "sha256": "06543bec145b19137f5d63bf0ff6c1c842e4f238158c1b920857ce6c47ccdd33",
+      "bytes": 16318
+    },
+    {
+      "path": "docs/functional-review-validation.md",
+      "sha256": "6d9deb5e27283fc09af7d3c396ee5ffbd011d0e55ea4cbc0b1d76bec2c7944c8",
+      "bytes": 10319
+    },
+    {
+      "path": "docs/funding-module-plan.md",
+      "sha256": "6e556bc0583d41b1fed1ff140c48acf55d3ce8085e0ab708825f805fd6d70609",
+      "bytes": 9778
+    },
+    {
+      "path": "docs/funding-projection-validation.md",
+      "sha256": "ce75e880d4d972e30ab2ae91c758b5028e7b055bb67b75487cb7a647cd612a74",
+      "bytes": 6508
+    },
+    {
+      "path": "docs/locked-changed-input-record.md",
+      "sha256": "668940b200ca7ac93ce40871f5e617b431df4fa03d2d69a2ffcf992e51d9ddcb",
+      "bytes": 1525
+    },
+    {
+      "path": "docs/locked-input-audit.json",
+      "sha256": "e54d88a87d27368558e49ac5b996015896c36394508234410e2f2ec2602c9bf7",
+      "bytes": 698
+    },
+    {
+      "path": "docs/mandate-review.md",
+      "sha256": "67d9560e7b4e43cec5baad4ab14e0c1c7e7500559c0fde72390f299deb0471c8",
+      "bytes": 14549
+    },
+    {
+      "path": "docs/project-requirements-and-plan.md",
+      "sha256": "d6c1a337c135097ec26fc1198303eb1725ff31f5471fb43c76254fbf434ff950",
+      "bytes": 19306
+    },
+    {
+      "path": "docs/purpose-and-payment-policy.md",
+      "sha256": "2055784be5d4afa6d15ce8b39bab5765eba790a083ec6009d246edc3767a4869",
+      "bytes": 15167
+    },
+    {
+      "path": "docs/reference-plan.json",
+      "sha256": "7b311e01c80299bb72dcab58fb2ac46845aa129d6905d49211baa0d0d35c098f",
+      "bytes": 3769
+    },
+    {
+      "path": "docs/security-and-free-data.md",
+      "sha256": "3f3be1d73c2be1f312b1991998062de3f05c1f9e5e43d61c04a303752e21736c",
+      "bytes": 5094
+    },
+    {
+      "path": "docs/streamlit-fallback.md",
+      "sha256": "5f09c406254562030bc384853c5bf0fbaa752229b65c38ca7178043ee28ce695",
+      "bytes": 4087
+    },
+    {
+      "path": "docs/submission-manifest.md",
+      "sha256": "0404579d81d718c0e3086069b926adbeaeee3fc1ea4b224850e907be6729468d",
+      "bytes": 6528
+    },
+    {
+      "path": "docs/v0-integration-validation.md",
+      "sha256": "7af5a48255dda87f5076eaa99334fdebe67876dedf03ef8a91c0d07c0b1e6914",
+      "bytes": 4622
+    },
+    {
+      "path": "docs/validation-and-ai-use.md",
+      "sha256": "b65db2e0fc06b2acf99a7657b65301641018c3352bcacb8edc12b4bc048a5169",
+      "bytes": 12525
+    },
+    {
+      "path": "docs/video-1-script.md",
+      "sha256": "1d5c89f7acf0f10b569ff71af0510ecf362c84f933d3be754f81dcdc2b5366ce",
+      "bytes": 2672
+    },
+    {
+      "path": "docs/video-2-script.md",
+      "sha256": "308f00542953f0f784f9f9599dad6b6fed8a790529fd9b60da8ddc913dab4f26",
+      "bytes": 3915
+    },
+    {
+      "path": "docs/video-3-script.md",
+      "sha256": "287c682dd18233295263acf5acce729b796e7ac7c077fc4b9b6ee15ceeffa402",
+      "bytes": 4141
+    },
+    {
+      "path": "docs/video-recording-guide.md",
+      "sha256": "d03cdb4bb95ea51a09ec57b51fd6925c63139067752dbe304126da20f3ae87b4",
+      "bytes": 2995
+    },
+    {
+      "path": "docs/visible-output.md",
+      "sha256": "a4788f145bf9f5897475ae1e24d0aa463f89c022a8708eac1efff8bd212077e8",
+      "bytes": 5781
+    },
+    {
+      "path": "docs/web-migration-validation.md",
+      "sha256": "dc7a264396df6116ab614251f87561c8ed44f37abe8222d850a27bac73188277",
+      "bytes": 4938
+    },
+    {
+      "path": "docs/web-setup-and-v0-guide.md",
+      "sha256": "d77b7e8c7e3609ab68c9e81a15c5cba483565634338962bb86ef5213f2bf0bd2",
+      "bytes": 15748
+    },
+    {
+      "path": "frontend/AGENTS.md",
+      "sha256": "063098f6cb31bb44c6f8fbea25b3876de7ee1e5f7d00a50dbab506f6415eb7f0",
+      "bytes": 679
+    },
+    {
+      "path": "frontend/app/design-preview/page.tsx",
+      "sha256": "417d8a38aa98006ad435eed37cc1bdeda4b2e0edfddbdce0aea5dfba3ed53e81",
+      "bytes": 335
+    },
+    {
+      "path": "frontend/app/globals.css",
+      "sha256": "5e13a552729465f65466a43446004c135d7606674a884587fa6c49b7bbae5330",
+      "bytes": 1216
+    },
+    {
+      "path": "frontend/app/layout.tsx",
+      "sha256": "d83bbfbc9ca7631017d911b52f2a8636d8eaa31c0f13f3bc1cca547bb7bba863",
+      "bytes": 925
+    },
+    {
+      "path": "frontend/app/page.tsx",
+      "sha256": "b274d5d2ec8fd6cd03f7526e1157a4ba788ddac0cfbfd1893054a43b552f9862",
+      "bytes": 252
+    },
+    {
+      "path": "frontend/components/planner/app-shell.tsx",
+      "sha256": "1995ed24b8731139898e7c05da84c401112b63d405e10b6dbcd6f53e6aae3af4",
+      "bytes": 10046
+    },
+    {
+      "path": "frontend/components/planner/assumptions-form.tsx",
+      "sha256": "9cca07387ba6b5ea04980ac95564122e09d2efc46d5b13b90d5ae302d9571e7d",
+      "bytes": 12538
+    },
+    {
+      "path": "frontend/components/planner/beneficiary-table.tsx",
+      "sha256": "f7764ddcb0c7ff8ecf27d0f9ade1b3e20383af83bacf1bf34ea5f535ffe7f92a",
+      "bytes": 3395
+    },
+    {
+      "path": "frontend/components/planner/evidence-view.tsx",
+      "sha256": "7d9de1f39c4f6fb97e42ef34e46832c4ad4a7f214e22eab80cc993bdccbbb2d4",
+      "bytes": 21646
+    },
+    {
+      "path": "frontend/components/planner/family-editor.tsx",
+      "sha256": "bc736f7ce444b9ec97481326f241626eeee841e37fa0ec2244196b19e7cfef8c",
+      "bytes": 5618
+    },
+    {
+      "path": "frontend/components/planner/family-timeline.tsx",
+      "sha256": "23709444b4896cfe30a0f5682627a3074f3f63753b6489633651ac349b309c14",
+      "bytes": 6120
+    },
+    {
+      "path": "frontend/components/planner/funding-view.tsx",
+      "sha256": "ad5d7b9e5d718e50694d5234583d0afba67132d7a4a97b10be8c6bcce612e175",
+      "bytes": 32417
+    },
+    {
+      "path": "frontend/components/planner/illustrative-preview.tsx",
+      "sha256": "46a6d07d6eb1b2b0525ebeff2bf8347e852a1be69109eba71dab273c4a42dc6b",
+      "bytes": 3831
+    },
+    {
+      "path": "frontend/components/planner/plan-view.tsx",
+      "sha256": "0a62da69444bda843b4c7192efcf0ff52634a088a96d02a506959cedc4024ab3",
+      "bytes": 4920
+    },
+    {
+      "path": "frontend/components/planner/planner-app.tsx",
+      "sha256": "609548589048cf338d1ea0e8f62e43d9762eb8f5bebe57426b624bc352b5f1d6",
+      "bytes": 6295
+    },
+    {
+      "path": "frontend/components/planner/portfolio-cases.tsx",
+      "sha256": "0f5fce929447883d970155a1a25d10fd01ce8f7906fe525a81cba4c7f952f529",
+      "bytes": 8195
+    },
+    {
+      "path": "frontend/components/planner/portfolio-growth.tsx",
+      "sha256": "d7a27565b11293a5498722529d2af4cbd50acba0249eba2f69cace8d28f33900",
+      "bytes": 8097
+    },
+    {
+      "path": "frontend/components/planner/portfolio-sensitivity.tsx",
+      "sha256": "34c017fe97ca5a34c6c4a6ffa737cf04fc2d7f07d02855e0e2ec37bc13ed4767",
+      "bytes": 1744
+    },
+    {
+      "path": "frontend/components/planner/portfolio-view.tsx",
+      "sha256": "a231940dac569b6d8bffc53b0241dee0a8850716e1a832edca5b60033b8cbc30",
+      "bytes": 32566
+    },
+    {
+      "path": "frontend/components/planner/primitives.tsx",
+      "sha256": "9139757ba7be5b0a69b3ced258cbdf809e5bc0ab2982ba88bd236f41a3414c62",
+      "bytes": 2441
+    },
+    {
+      "path": "frontend/components/planner/reserve-calculator.tsx",
+      "sha256": "fc1a645ab3c40a16bf05370201fba6149c6fa94337d8a17674e98ff06f1ab15d",
+      "bytes": 4400
+    },
+    {
+      "path": "frontend/components/planner/reserve-view.tsx",
+      "sha256": "44288653241c46ccaed4f20da3cc9e922e13e4af70c01374222e2cc787248454",
+      "bytes": 13207
+    },
+    {
+      "path": "frontend/components/planner/status-banners.tsx",
+      "sha256": "6c821d0fa84c15b6b5971b8a12b693bca72a5211b9b3a977032afd41601289fe",
+      "bytes": 4306
+    },
+    {
+      "path": "frontend/components/planner/summary-ledger.tsx",
+      "sha256": "265e1858617e8dfa812f0dcf69f1472bb2443568619aadc9dc2ab9f43be20628",
+      "bytes": 2488
+    },
+    {
+      "path": "frontend/components/planner/types.ts",
+      "sha256": "1d584dac2c7dc25ed226485f621d284220b07822bd08a0fbfb375e418b77dcb2",
+      "bytes": 1638
+    },
+    {
+      "path": "frontend/handoff/api/analysis.example.json",
+      "sha256": "6e2b6758117c47c4fcb707c1212d3043271c1232ccebafe694810d8ff1711f10",
+      "bytes": 105808
+    },
+    {
+      "path": "frontend/handoff/api/college-payment-plan.example.json",
+      "sha256": "ac587f5656eb9a4e9896a070fcaf5d3e3f5c1ec21829f47e5fdc815f547b7a2a",
+      "bytes": 1883
+    },
+    {
+      "path": "frontend/handoff/api/college-reserve.example.json",
+      "sha256": "5c56ea0726e84b52203569b24ed2a204c3955eb8fe2cc00493a5dad652a4851a",
+      "bytes": 16209
+    },
+    {
+      "path": "frontend/handoff/api/funding-projection.example.json",
+      "sha256": "a28d23a7208d567699f959757b9b509f01e822a79df17c50c858e498e17ffa5a",
+      "bytes": 42982
+    },
+    {
+      "path": "frontend/handoff/api/openapi.json",
+      "sha256": "933d767c213f24984cf22f7e03bf923dd4abb395021e3483b930192c21bd7f30",
+      "bytes": 38393
+    },
+    {
+      "path": "frontend/handoff/api/payment-schedule.example.json",
+      "sha256": "a772642107206d5ddbdb7cec61aae2226bd60afb90e3e5a2215c44d9e5295ce1",
+      "bytes": 13560
+    },
+    {
+      "path": "frontend/handoff/api/portfolio-cases.example.json",
+      "sha256": "b7bfacce551ae1f05b03b1c896d39426ab65a698d7ce0f66f67e09252f4e0c1b",
+      "bytes": 56961
+    },
+    {
+      "path": "frontend/handoff/api/portfolio-estimate.example.json",
+      "sha256": "68950408d3fa0f87d13a26acee824d6dfef6f60eb827bf7047ae54a91793112e",
+      "bytes": 16482
+    },
+    {
+      "path": "frontend/handoff/api/portfolio-simulation.example.json",
+      "sha256": "b59255e4d94bf1154b10dc992f5ce4238bcf51aeb901fd8d4afbc2b422c09ff2",
+      "bytes": 8345
+    },
+    {
+      "path": "frontend/handoff/api/reference-case.json",
+      "sha256": "28e1fdbb1802a9ecc42e56c86d3c4ef4cd2b206a9c6f58bee1dae7960dce94bf",
+      "bytes": 3506
+    },
+    {
+      "path": "frontend/hooks/use-payment-plan.ts",
+      "sha256": "4a5a048a24713e41fe0c3e0ed5d8ae35f4702fbb1fd1612f585467b94ff997ad",
+      "bytes": 5365
+    },
+    {
+      "path": "frontend/lib/api.ts",
+      "sha256": "a61e84301fa4a635ee890098ff31406335084928b8cb013610cd3207c73a97e5",
+      "bytes": 15450
+    },
+    {
+      "path": "frontend/lib/college-payment-totals.ts",
+      "sha256": "2fa437f9a724bc0efff27fb49f13c9e21f96e5becaa7a0b468d49d144c5bbbaa",
+      "bytes": 1239
+    },
+    {
+      "path": "frontend/lib/evidence.ts",
+      "sha256": "57053413c505b6b41c33acdcae69fc57e3fb285ed399b10f96ccdf2cce72f054",
+      "bytes": 4758
+    },
+    {
+      "path": "frontend/lib/format.ts",
+      "sha256": "bc44ada70fa3f8c8d3591cbbeb2dbbf837a2357172671470efc70226e08bba55",
+      "bytes": 1443
+    },
+    {
+      "path": "frontend/lib/portfolio-weights.ts",
+      "sha256": "5519fac1d13a0e17cbcd4c3d0bc4a9d5fad06a7b93434302dcc318f55a1c3833",
+      "bytes": 1149
+    },
+    {
+      "path": "frontend/next-env.d.ts",
+      "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b",
+      "bytes": 288
+    },
+    {
+      "path": "frontend/next.config.ts",
+      "sha256": "eec3907f00e21e393ee4d84c4522f055c0f038e11a3899678e439b246232f932",
+      "bytes": 303
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "sha256": "ca7ff8090d8c5e65b920b581042637133601b449f767c13ab563e78a7b5a1245",
+      "bytes": 59645
+    },
+    {
+      "path": "frontend/package.json",
+      "sha256": "d15be2c4836ef0c5e61ebf5ee65f72f06d621dcd6aeab8c04f66ed50baef0267",
+      "bytes": 618
+    },
+    {
+      "path": "frontend/postcss.config.mjs",
+      "sha256": "a1a188221f064d964dd9958c3d48b0c23252fabbeb6099d95ee8e15c764718b0",
+      "bytes": 60
+    },
+    {
+      "path": "frontend/public/icon.svg",
+      "sha256": "263f117c0c69a44d3206a5702105c178ebaa164bca325f3c3973a13bd948f1bf",
+      "bytes": 1304
+    },
+    {
+      "path": "frontend/scripts/check-college-refresh.js",
+      "sha256": "58dd41d94d5a4c5917ad7fb0475e5b81c22be3583d7313cc15c2f83fd80c5c38",
+      "bytes": 7519
+    },
+    {
+      "path": "frontend/scripts/check-college-ui.js",
+      "sha256": "f687da0719ecc61778942d1485ed40dcf09f64dc7280d7efe0c9320651446291",
+      "bytes": 8759
+    },
+    {
+      "path": "frontend/scripts/check-evidence-ui.js",
+      "sha256": "d3e499e5db4cdc2421696080020d9d2aea35e7a1dd47c697ad4ac6d732d7ec93",
+      "bytes": 8541
+    },
+    {
+      "path": "frontend/scripts/check-funding-link.js",
+      "sha256": "c39bbb17a21257a8e296807149efd2885d000bf64545e2e99c44870ebc3c461c",
+      "bytes": 7256
+    },
+    {
+      "path": "frontend/scripts/check-funding-ui.js",
+      "sha256": "051503ab243835ec121b7d8463c3a8e9c97498c4834a27b668de6ec98095f62f",
+      "bytes": 6506
+    },
+    {
+      "path": "frontend/scripts/check-portfolio-cases.js",
+      "sha256": "99f369553df9b864a7524ec20a96d87b4f8834d830fe2c94d8cfd62febedf3ba",
+      "bytes": 6803
+    },
+    {
+      "path": "frontend/scripts/check-portfolio-ui.js",
+      "sha256": "cb3211910e7dd2fa52ae70bd2c448f2466de0247ec47e705f7b77cac3dada0ac",
+      "bytes": 4527
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "sha256": "0e3d89e6f5bda2b6bc60e6e67174faba8336b087bae9cee271c57943547ea5d9",
+      "bytes": 590
+    },
+    {
+      "path": "outputs/analysis-summary.md",
+      "sha256": "a4788f145bf9f5897475ae1e24d0aa463f89c022a8708eac1efff8bd212077e8",
+      "bytes": 5781
+    },
+    {
+      "path": "outputs/analysis.json",
+      "sha256": "2cfd47c45fbb3d1a94dd97f168c832b9855cd8ef6422724b83196bc0429e89c0",
+      "bytes": 3649031
+    },
+    {
+      "path": "outputs/changed-college-calendar.json",
+      "sha256": "c1335a728ce590bbd823b019317847c5a0146a0b70e4021110bb6a2d95a03169",
+      "bytes": 7560
+    },
+    {
+      "path": "outputs/changed-input-comparison.json",
+      "sha256": "8b4a7c45bec2fd59e70f9a553dd39733573cd3cb4bd2c266849f7cea04b5bbbd",
+      "bytes": 2968
+    },
+    {
+      "path": "outputs/changed-input.json",
+      "sha256": "dae03287c6228b738a60e3ebb34f99c88ccda482ef326703a16e77f8571b9119",
+      "bytes": 3654855
+    },
+    {
+      "path": "outputs/college-calendar.json",
+      "sha256": "824c0836e12f1471e60ab174439aee4ff76f918d47e3e5540008b71f0dc5aeca",
+      "bytes": 7558
+    },
+    {
+      "path": "payment_policy.py",
+      "sha256": "027d8e238f228ca14e31853484aaee12749137d2e40a7826ae06c4b9e7301fc1",
+      "bytes": 4148
+    },
+    {
+      "path": "prepare_github_upload.py",
+      "sha256": "729fb34ed4b2668f261235352f98816d8cda7dbfdde8bf3f5f22bdd34d7f70ef",
+      "bytes": 3168
+    },
+    {
+      "path": "reproduce_analysis.py",
+      "sha256": "5f7dd63c21a58a01412787a9d1214ccba9f5718696010bb64439d38f02bf3752",
+      "bytes": 3699
+    },
+    {
+      "path": "reproduce_payment_plan.py",
+      "sha256": "9481bc2fe49ac194055f3daf746834f581b1ee4c4f8f159fcb06878dbb22eb3a",
+      "bytes": 1060
+    },
+    {
+      "path": "reproduce_submission.py",
+      "sha256": "7496b5cbedc4000ae20876fc9b0805631f2c9af3ebf78f7ede683b07c03be316",
+      "bytes": 8040
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "fe42cf7e666c81b204fd1034f1bd7b20a2a4520a9e2ec4f3536dd530770302f7",
+      "bytes": 33
+    },
+    {
+      "path": "run_changed_input.py",
+      "sha256": "edc11650f19bc969f5722c8e653abcab2a60c02846eb997e509a1d8d166f1002",
+      "bytes": 3493
+    },
+    {
+      "path": "run_web.py",
+      "sha256": "a2b45f851a36829b492719ef86bdce234dead519eb6b30d78a0bc01e96471e03",
+      "bytes": 4986
+    },
+    {
+      "path": "scripts/check_submission.py",
+      "sha256": "d9dd65678042092a965b55e560bacf4242273334d830bea3a9f76902d2565540",
+      "bytes": 2999
+    },
+    {
+      "path": "scripts/source_package.py",
+      "sha256": "77db5c8afe2d90dc9da0d009cd21453a555023a5e7bb3afaecb7f7d85e86a501",
+      "bytes": 4573
+    },
+    {
+      "path": "setup_web.py",
+      "sha256": "d5bed5e40df7dd97d7dfb427bb16b473d83b0b13107e8b312022799a7da5435b",
+      "bytes": 1256
+    },
+    {
+      "path": "streamlit_app.py",
+      "sha256": "f304d2d5019cffddc0ffe9cf6d0a02cc32514f46eef38a921315beb414288f0f",
+      "bytes": 11840
+    },
+    {
+      "path": "tests/test_academic_calendar.py",
+      "sha256": "c533f9a5146e21f96f8f33afb8bc58a69597b710ae3bbc5da081d3cc72526126",
+      "bytes": 2648
+    },
+    {
+      "path": "tests/test_payment_app.py",
+      "sha256": "1a028d628d1f6c3147fc77593cc72bc3ac56db58e4d07e60b1e1c67490c67871",
+      "bytes": 4498
+    },
+    {
+      "path": "tests/test_payment_policy.py",
+      "sha256": "34545eb478fd9907b6ea4210af8c5f3615d0da4ec09428d69f0eed971f9e59cb",
+      "bytes": 3844
+    },
+    {
+      "path": "tests/test_source_package.py",
+      "sha256": "4fa9c6b4fdad8a2f3d4ef097959d0731bdc83f3e929ab3f892940d8617eee0dc",
+      "bytes": 1971
+    }
+  ]
+}
